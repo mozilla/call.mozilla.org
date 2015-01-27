@@ -1,0 +1,94 @@
+body {
+  background: #969696;
+  margin: 0;
+  padding: 30px 30px 0;
+  text-align: center;
+  color: #565656;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+  padding-bottom: 18px;
+}
+
+.main-container {
+  max-width: 325px;
+  margin: auto;
+}
+.content-container {
+  background: #EDEAE3;
+  background: linear-gradient(to bottom, #D7D3C8, #F6F4EC);
+  padding: 18px 18px 54px;
+}
+.branding {
+  text-align: left;
+  font-family: "Fira Sans";
+  font-size: 26px;
+}
+.message {
+  font-size: 32px;
+  font-weight: 300;
+}
+.every-call-counts {
+  font-size: 28px;
+  font-weight: 300;
+}
+.every-call-counts span {
+  font-style: italic;
+}
+.content {
+  background: #FFFFFF;
+  padding: 18px 18px 10px;;
+  font-size: 14px;
+}
+.content a {
+  font-weight: bold;
+}
+.footer {
+  background: #FFFFFF;
+  padding: 16px;
+  text-align: left;
+  color: #BBBBBB;
+}
+
+button, input {
+  margin-bottom: 18px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+input {
+  padding: 5px 0px;
+  border: solid 1px #E3E0D9;
+  box-shadow: inset 0 4px 4px -4px #E3E0D9;
+}
+
+button {
+  background: blue;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 0;
+  background: #318DD0;
+  background: linear-gradient(to bottom, #43A5E2, #1E6EB7);
+  cursor: pointer;
+  box-shadow: 0px 2px 2px #CCCCCC;
+  font-size: 22px;
+}
+
+.phone-container {
+  padding: 0 18px;
+}
+
+.phone-container div {
+  padding: 0;
+  margin-bottom: 5px;
+}
+.disclaimer {
+  font-size: 12px;
+}
+a {
+  color: #27AAE1;
+  text-decoration: none;
+}
