@@ -3,6 +3,7 @@
     <script src="call-congress.js"></script>
     <link href="call-congress.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300|Fira+Sans:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/font-awesome-4.3.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="main-container">
@@ -10,15 +11,19 @@
         <div class="branding">mozilla</div>
         <div class="message">The FCC votes on Net Neutrality in...</div>
         <div class="count-down">
-          <span class="days-left">36</span> days
+          <div class="count-down-top"></div>
+          <div class="count-down-bottom"></div>
+          <div class="count-down-text">
+            <span class="days-left"></span> days
+          </div>
         </div>
         <div class="content">
           <div class="every-call-counts"><span>Every</span> call counts.</div>
           <div>
-            Even if it's the first time you've ever calls an elected official, we've made it easy. We'll call you irhgt away and connect you with a representative.
+            Even if it's the first time you've ever calls an elected official, we've made it easy. We'll call you right away and connect you with a representative.
           </div>
           <div class="phone-container">
-            <div>Enter your phone number</div>
+            <div><i class="fa fa-mobile"></i>Enter your phone number</div>
             <input type="text" placeholder="(555) 555 - 555">
           </div>
           <button>Call now >></button>
@@ -28,7 +33,7 @@
       <div class="footer">
         <div class="branding">mozilla</div>
         <div class="disclaimer">
-          In order to connect you with your correct elected official in U.S. Congress and the FCC, we ask you for your phone number and possibly your zip code. We will not store this information for more than 30 days, or use it for purposes other than connecting your call. Your call is connected with the help of a company called Twilio. For more information see <a href="#">Mozilla's privacy policy</a> or the <a href="#">privacy policay of Twilio</a>.
+          In order to connect you with your correct elected official in U.S. Congress and the FCC, we ask you for your phone number and possibly your zip code. We will not store this information for more than 30 days, or use it for purposes other than connecting your call. Your call is connected with the help of a company called Twilio. For more information see <a target="_blank" href="https://www.mozilla.org/en-US/privacy/websites/">Mozilla's privacy policy</a> or the <a target="_blank" href="https://www.twilio.com/legal/privacy">privacy policay of Twilio</a>.
         </div>
       </div>
     </div>
