@@ -26,13 +26,67 @@ div {
   font-family: "Fira Sans";
   font-size: 26px;
 }
-.message {
+.calling-tips-container {
+  border-bottom: 1px solid #DBD8D8;
+  padding: 0;
+  margin-bottom: 18px;
+}
+.calling-tip {
+  text-align: left;
+  background: #ECE9E0;
+  border-top: 1px solid #DBD8D8;
+  padding: 10px;
+  font-size: 13px;
+}
+.calling-tip span {
+  font-weight: bold;
+}
+.message,
+.call-script-message,
+.tips-heading {
   font-size: 32px;
   font-weight: 300;
 }
-.every-call-counts {
+.page-call-script .highlight {
+  background: #9C988C;
+  color: #eaeaea;
+}
+.page-calling .highlight {
+  background: #0475BB;
+  color: #acdbff;
+}
+.calling-status,
+.blue-highlight {
+  color: #0195DD;
+}
+.number {
+  vertical-align: super;
+  font-size: 12px;
+}
+.page-call-script .call-script {
+  background: #B6B2A7;
+}
+.page-calling .call-script {
+  background: #0195DD;
+}
+.call-script {
+  color: #FFFFFF;
+  padding: 0 18px 18px;;
+  border-radius: 15px;
+  text-align: left;
+  margin: 18px 0;
+}
+.call-script p {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.every-call-counts,
+.ready-to-call div {
   font-size: 28px;
   font-weight: 300;
+}
+.ready-to-call {
+  padding: 18px 0 0;
 }
 .every-call-counts span {
   font-style: italic;
@@ -101,6 +155,7 @@ a {
   height: 70px;
   padding: 0;
   margin: 18px auto;
+  display: none;
 }
 .count-down-text {
   position: absolute;
@@ -138,4 +193,29 @@ a {
   left: 0;
   top: 50%;
   border-radius: 3px;
+}
+.call-script-container {
+  padding: 0;
+}
+.every-call-count-container,
+.call-script-container,
+.calling-status,
+.calling-tips,
+.message,
+.calling-tips-container,
+.call-script-link,
+.page-calling .content,
+.page-calling .ready-to-call {
+  display: none;
+}
+.page-1 .message,
+.page-1 .call-script-link,
+.page-1 .every-call-count-container,
+.page-1 .count-down,
+.page-call-script .call-script-container,
+.page-calling .calling-status,
+.page-calling .calling-tips,
+.page-calling .calling-tips-container,
+.page-calling .call-script-container {
+  display: block;
 }
