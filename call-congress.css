@@ -21,6 +21,24 @@ div {
   background: linear-gradient(to bottom, #D7D3C8, #F6F4EC);
   padding: 18px;
 }
+.call-number.invalid {
+  border: 3px solid #BD372E;
+}
+.phone-error.invalid {
+  display: block;
+}
+.phone-error {
+  display: none;
+  background: #FFF2F2;
+  color: #BD372E;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 14px;
+}
+
+.phone-error span {
+  font-weight: bold;
+}
 .branding {
   text-align: left;
   font-family: "Fira Sans";

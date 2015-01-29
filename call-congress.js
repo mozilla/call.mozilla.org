@@ -7,4 +7,24 @@ document.addEventListener("DOMContentLoaded", function() {
     // do something on last day?
   }
   daysLeftElement.textContent = daysLeft;
+
+  var callNumber = document.querySelector(".call-number");
+  var callNumberError = document.querySelector(".phone-error");
+  callNumber.addEventListener("input", function() {
+    callNumber.classList.remove("invalid");
+    callNumberError.classList.remove("invalid");
+  });
+  var callButton = document.querySelector(".call-now-button");
+  callButton.addEventListener("click", function() {
+    var formValid = false;
+    var callForm = document.querySelector(".call-form");
+
+    if (!callNumber.validity.valid) {
+      callNumber.classList.add("invalid");
+      callNumberError.classList.add("invalid");
+      return;
+    }
+    callForm.setAttribute("action", callForm.getAttribute("action") + callNumber.value);
+    //callForm.submit();
+  });
 });
