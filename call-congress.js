@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function reqListener (e) {
       var data = JSON.parse(this.responseText);
       callButton.classList.remove("waiting");
-      if (!data.queued) {
+      if (data.message !== "queued") {
         callNumber.classList.add("invalid");
         callNumberError.classList.add("show");
         return;
