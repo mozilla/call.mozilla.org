@@ -17,13 +17,14 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   var callButton = document.querySelector(".call-now-button");
   callButton.addEventListener("click", function() {
-
+    callButton.classList.add("waiting");
     function reqListener (e) {
       var data = JSON.parse(this.responseText);
+      callButton.classList.remove("waiting");
       if (!data.queued) {
         callNumber.classList.add("invalid");
         callNumberError.classList.add("show");
-        return;
+        //return;
       }
 
       contentContainer.classList.remove("page-1");
