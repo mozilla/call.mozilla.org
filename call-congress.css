@@ -24,7 +24,7 @@ div {
 .call-number.invalid {
   border: 3px solid #BD372E;
 }
-.phone-error.invalid {
+.phone-error.show {
   display: block;
 }
 .phone-error {
@@ -34,6 +34,7 @@ div {
   border-radius: 12px;
   padding: 14px;
   font-size: 14px;
+  margin-bottom: 18px;
 }
 
 .phone-error span {
