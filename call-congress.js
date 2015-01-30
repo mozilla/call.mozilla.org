@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if (!data.queued) {
         callNumber.classList.add("invalid");
         callNumberError.classList.add("show");
-        //return;
+        return;
       }
 
       contentContainer.classList.remove("page-1");
