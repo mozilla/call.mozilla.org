@@ -12,10 +12,6 @@ div {
   padding-bottom: 18px;
 }
 
-.main-container {
-  max-width: 325px;
-  margin: auto;
-}
 .content-container {
   background: #EDEAE3;
   background: linear-gradient(to bottom, #D7D3C8, #F6F4EC);
@@ -34,7 +30,8 @@ div {
   border-radius: 12px;
   padding: 14px;
   font-size: 14px;
-  margin-bottom: 18px;
+  max-width: 253px;
+  margin: 0 auto 18px;
 }
 
 .phone-error span {
@@ -99,6 +96,10 @@ div {
   display: inline-block;
   margin-bottom: 0;
 }
+.every-call-count-container {
+  max-width: 400px;
+  margin: auto;
+}
 .every-call-counts,
 .ready-to-call div {
   font-size: 28px;
@@ -114,10 +115,16 @@ div {
   background: #FFFFFF;
   padding: 18px;
   font-size: 14px;
-  margin: 54px 0 36px;
+  margin: 54px auto 36px;
+  overflow: hidden;
 }
 .content a {
   font-weight: bold;
+}
+.footer-container {
+  padding: 0;
+  margin: auto;
+  max-width: 600px;
 }
 .footer {
   background: #FFFFFF;
@@ -125,7 +132,6 @@ div {
   text-align: left;
   color: #BBBBBB;
 }
-
 button, input {
   margin-bottom: 18px;
   width: 100%;
@@ -150,13 +156,19 @@ button {
   cursor: pointer;
   box-shadow: 0px 2px 2px #999999;
   font-size: 22px;
+  max-width: 253px;
 }
-
-.phone-container {
+.call-now-button-container {
+  max-width: 253px;
+  margin: auto;
+  padding: 0;
+}
+.phone-input-container {
   padding: 0 18px;
+  max-width: 253px;
+  margin: auto;
 }
-
-.phone-container div {
+.phone-input-container div {
   padding: 0;
   margin-bottom: 5px;
 }
@@ -186,7 +198,7 @@ a {
   padding: 0;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px;
 }
-.phone-container div .fa-mobile {
+.phone-input-container div .fa-mobile {
   font-size: 18px;
   margin: 0 5px;
   vertical-align: bottom;
@@ -215,6 +227,40 @@ a {
 }
 .call-script-container {
   padding: 0;
+}
+.phone-container {
+  padding: 0;
+}
+/* Media queires */
+.main-container {
+  max-width: 325px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .main-container {
+    max-width: 1140px;
+  }
+  .content {
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .call-now-button-container,
+  .phone-container {
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 281px;
+  }
+  .phone-error {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+
+}
+@media screen and (min-width: 1200px) {
 }
 .every-call-count-container,
 .call-script-container,
@@ -264,22 +310,22 @@ a {
   animation-timing-function: linear;
 }
 @-ms-keyframes spin {
-    from { -ms-transform: rotate(0deg); }
-    to { -ms-transform: rotate(360deg); }
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(360deg); }
 }
 @-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
 }
 @-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
 }
 @keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
 }
