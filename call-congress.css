@@ -45,7 +45,8 @@ div {
 .calling-tips-container {
   border-bottom: 1px solid #DBD8D8;
   padding: 0;
-  margin-bottom: 18px;
+  margin: 0 auto 18px;
+  max-width: 400px;
 }
 .calling-tip {
   text-align: left;
@@ -96,7 +97,8 @@ div {
   display: inline-block;
   margin-bottom: 0;
 }
-.every-call-count-container {
+.every-call-count-container,
+.ready-to-call {
   max-width: 400px;
   margin: auto;
 }
@@ -113,9 +115,9 @@ div {
 }
 .content {
   background: #FFFFFF;
-  padding: 18px;
+  padding: 30px 18px 18px;
   font-size: 14px;
-  margin: 54px auto 36px;
+  margin: 36px auto;
   overflow: hidden;
 }
 .content a {
@@ -185,7 +187,7 @@ a {
   width: 145px;
   height: 70px;
   padding: 0;
-  margin: 18px auto;
+  margin: 18px auto 54px;
   display: none;
 }
 .count-down-text {
@@ -225,6 +227,11 @@ a {
   top: 50%;
   border-radius: 3px;
 }
+.branding,
+.call-script-container {
+  margin-left: auto;
+  margin-right: auto;
+}
 .call-script-container {
   padding: 0;
 }
@@ -241,6 +248,8 @@ a {
   .main-container {
     max-width: 1140px;
   }
+  .call-script-container,
+  .branding,
   .content {
     max-width: 600px;
   }
