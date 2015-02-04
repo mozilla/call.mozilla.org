@@ -1,21 +1,24 @@
-body {
-  background: #969696;
+* {
   margin: 0;
-  padding: 30px 30px 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
   text-align: center;
   color: #565656;
   font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-div {
-  box-sizing: border-box;
-  padding-bottom: 18px;
+.footer, .push {
+  height: 50px; /* .push must be the same height as .footer */
 }
 
 .content-container {
   background: #EDEAE3;
   background: linear-gradient(to bottom, #D7D3C8, #F6F4EC);
-  padding: 18px;
+  padding: 18px 18px 0px 18px;
 }
 .call-number.invalid {
   border: 3px solid #BD372E;
@@ -37,7 +40,16 @@ div {
 .phone-error span {
   font-weight: bold;
 }
-.branding {
+.branding-top {
+  text-align: left;
+  font-family: "Fira Sans";
+  font-size: 37px;
+  margin-left: 70px;
+  margin-top: -5px;
+  margin-bottom: -40px;
+  height: 95px;
+}
+.branding-bottom {
   text-align: left;
   font-family: "Fira Sans";
   font-size: 26px;
@@ -61,7 +73,7 @@ div {
 .message,
 .call-script-message,
 .tips-heading {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 300;
 }
 .page-call-script .highlight {
@@ -97,6 +109,15 @@ div {
   display: inline-block;
   margin-bottom: 0;
 }
+.page-1 div.every-call-count-container {
+  margin-top: 32px;
+}
+.page-1 .call-now-button {
+  height: 70px;
+  max-width: 290px !important;
+  margin-left: -20px;
+  width: 290px;
+}
 .every-call-count-container,
 .ready-to-call {
   max-width: 400px;
@@ -104,7 +125,7 @@ div {
 }
 .every-call-counts,
 .ready-to-call div {
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 300;
 }
 .ready-to-call {
@@ -112,16 +133,6 @@ div {
 }
 .every-call-counts span {
   font-style: italic;
-}
-.content {
-  background: #FFFFFF;
-  padding: 30px 18px 18px;
-  font-size: 14px;
-  margin: 36px auto;
-  overflow: hidden;
-}
-.content a {
-  font-weight: bold;
 }
 .footer-container {
   padding: 0;
@@ -133,6 +144,8 @@ div {
   padding: 16px;
   text-align: left;
   color: #BBBBBB;
+  margin-right: -3px;
+  margin-left: -3px;
 }
 button, input {
   margin-bottom: 18px;
@@ -142,7 +155,7 @@ button, input {
 }
 
 input {
-  padding: 5px 0px;
+  padding: 15px 0px;
   border: solid 1px #D0D0D0;
   box-shadow: inset 0 5px 4px -4px #E3E3E3;
   background: #FAFAFA;
@@ -184,10 +197,10 @@ a {
 .count-down {
   color: white;
   position: relative;
-  width: 145px;
-  height: 70px;
+  width: 190px;
+  height: 90px;
   padding: 0;
-  margin: 18px auto 54px;
+  margin: 18px auto 49px;
   display: none;
 }
 .count-down-text {
@@ -195,18 +208,18 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
-  font-size: 25px;
+  font-size: 29px;
   font-weight: 300;
   padding: 0;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px;
 }
 .phone-input-container div .fa-mobile {
-  font-size: 18px;
-  margin: 0 5px;
+  font-size: 35px;
+  margin: 0px 15px;
   vertical-align: bottom;
 }
 .days-left {
-  font-size: 51px;
+  font-size: 65px;
   font-weight: bold;
 }
 .count-down-top {
@@ -227,7 +240,6 @@ a {
   top: 50%;
   border-radius: 3px;
 }
-.branding,
 .call-script-container {
   margin-left: auto;
   margin-right: auto;
@@ -238,39 +250,70 @@ a {
 .phone-container {
   padding: 0;
 }
-/* Media queires */
+
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px) {
+}
+
+.wrapper {
+  background: #FFF;
+  max-width: 690px;
+  height: 260px;
+  padding: 20px 35px;
+  overflow:hidden;
+}
+.wrapper a {
+  font-weight: bold;
+}
+
+.left-panel {
+  float:left;
+  margin-right:20px;
+  width: 50%;
+}
+.right-panel {
+  float: right;
+}
+
+@media screen and (max-width: 400px) {
+   .left-panel {
+    float: none;
+    margin-right:0;
+    width:auto;
+  }
+  .wrapper {
+    height: 500px;
+  }
+  .wrapper .call-now-button {
+    width: 240px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .call-script-link {
+    padding-top: 15px;
+  }
+  .page-1 .message {
+    font-size: 35px;
+  }
+  .branding-top {
+    margin-left: 0;
+  }
+}
+
+.center-block {
+  display: block;
+  margin: 0 auto;
+}
+
 .main-container {
   max-width: 325px;
   margin: auto;
-  padding-bottom: 30px;
 }
-@media screen and (min-width: 480px) {
-  .main-container {
-    max-width: 1140px;
-  }
-  .call-script-container,
-  .branding,
-  .content {
-    max-width: 600px;
-  }
+.main-container {
+  max-width: 100%;
 }
-@media screen and (min-width: 768px) {
-  .call-now-button-container,
-  .phone-container {
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    min-width: 281px;
-  }
-  .phone-error {
-    margin: auto;
-  }
-}
-@media screen and (min-width: 992px) {
 
-}
-@media screen and (min-width: 1200px) {
-}
 .every-call-count-container,
 .call-script-container,
 .calling-status,
@@ -312,7 +355,7 @@ a {
   -ms-animation-duration: 2000ms;
   -ms-animation-iteration-count: infinite;
   -ms-animation-timing-function: linear;
-  
+
   animation-name: spin;
   animation-duration: 2000ms;
   animation-iteration-count: infinite;
