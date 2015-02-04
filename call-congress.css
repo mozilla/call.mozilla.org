@@ -330,7 +330,12 @@ and (max-device-width : 480px) {
   .page-1 .phone-input-container div {
     font-size: 12px;
   }
+  .phone-error {
+    font-size: 13px;
+  }
 }
+
+
 
 
 @media screen
@@ -392,6 +397,10 @@ and (max-device-width : 780px) {
   }
   .page-1 .phone-input-container div {
     font-size: 12px;
+  }
+  .phone-error {
+    font-size: 12px;
+    max-width: 200px;
   }
 }
 

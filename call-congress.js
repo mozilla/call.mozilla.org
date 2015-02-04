@@ -4,6 +4,15 @@ document.addEventListener("DOMContentLoaded", function() {
   var finalDay = new Date(2015, 1, 26);
   var nowDay = new Date();
   var daysLeft = Math.ceil((finalDay - nowDay)/(1000*60*60*24));
+
+  // screen size:
+  var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    x = w.innerWidth || e.clientWidth || g.clientWidth,
+    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+
   if (daysLeft === 0) {
     // do something on last day?
   }
@@ -11,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var callNumber = document.querySelector(".call-number");
   var callNumberError = document.querySelector(".phone-error");
+  var callWrapper = document.querySelector(".wrapper");
+
   callNumber.addEventListener("input", function() {
     callNumber.classList.remove("invalid");
     callNumberError.classList.remove("show");
@@ -24,6 +35,11 @@ document.addEventListener("DOMContentLoaded", function() {
       if (data.message !== "queued") {
         callNumber.classList.add("invalid");
         callNumberError.classList.add("show");
+        if(x < 520) {
+          callWrapper.style.height = "450px";
+        } else {
+          callWrapper.style.height = "315px";
+        }
         return;
       }
 
