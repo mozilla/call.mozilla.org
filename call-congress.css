@@ -283,7 +283,8 @@ a {
     width:auto;
   }
   .wrapper {
-    height: 500px;
+    height: 355px;
+    max-width: 215px;
   }
   .wrapper .call-now-button {
     width: 240px;
@@ -298,6 +299,39 @@ a {
   }
   .branding-top {
     margin-left: 0;
+  }
+  .count-down {
+    width: 145px;
+    height: 70px;
+  }
+  .days-left {
+    font-size: 45px;
+  }
+  .count-down-text {
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 5px 0;
+  }
+  div.every-call-counts {
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+  }
+  .every-call-count-container p {
+    font-size: 14px;
+  }
+  .page-1 div.every-call-count-container {
+    margin-top: 0;
+  }
+  .call-now-button-container {
+    margin-right: -10px;
+  }
+  .page-1 .phone-input-container div .fa-mobile {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  .page-1 .phone-input-container div {
+    font-size: 12px;
   }
 }
 
