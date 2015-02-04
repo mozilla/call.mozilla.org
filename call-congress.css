@@ -271,14 +271,16 @@ a {
   float: right;
 }
 
-@media screen and (max-width: 630px) {
-   .left-panel {
+@media screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  .left-panel {
     float: none;
     margin-right:0;
     width:auto;
   }
   .wrapper {
-    height: 355px;
+    height: 360px;
     max-width: 215px;
   }
   .wrapper .call-now-button {
@@ -331,7 +333,9 @@ a {
 }
 
 
-@media screen and (min-width: 785px) {
+@media screen
+and (min-device-width : 490px)
+and (max-device-width : 780px) {
    .left-panel {
     float: left;
     margin-left: -10px;
