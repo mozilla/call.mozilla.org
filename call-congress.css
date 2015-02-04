@@ -251,11 +251,6 @@ a {
   padding: 0;
 }
 
-@media only screen
-  and (min-device-width : 320px)
-  and (max-device-width : 480px) {
-}
-
 .wrapper {
   background: #FFF;
   max-width: 690px;
@@ -276,7 +271,7 @@ a {
   float: right;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 630px) {
    .left-panel {
     float: none;
     margin-right:0;
@@ -285,6 +280,67 @@ a {
   .wrapper {
     height: 355px;
     max-width: 215px;
+  }
+  .wrapper .call-now-button {
+    width: 240px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .call-script-link {
+    padding-top: 15px;
+  }
+  .page-1 .message {
+    font-size: 35px;
+  }
+  .branding-top {
+    margin-left: 0;
+  }
+  .count-down {
+    width: 145px;
+    height: 70px;
+  }
+  .days-left {
+    font-size: 45px;
+  }
+  .count-down-text {
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 5px 0;
+  }
+  div.every-call-counts {
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+  }
+  .every-call-count-container p {
+    font-size: 14px;
+  }
+  .page-1 div.every-call-count-container {
+    margin-top: 0;
+  }
+  .call-now-button-container {
+    margin-right: -10px;
+  }
+  .page-1 .phone-input-container div .fa-mobile {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  .page-1 .phone-input-container div {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (min-width: 785px) {
+   .left-panel {
+    float: left;
+    margin-left: -10px;
+    width:auto;
+    max-width: 250px;
+  }
+  .wrapper {
+    height: 220px;
+    max-width: 500px;
   }
   .wrapper .call-now-button {
     width: 240px;
