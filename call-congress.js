@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
   var callWrapper = document.querySelector(".page-1-wrapper");
   var spinner = document.querySelector(".fa-spinner");
 
-  $("#phone").mask("(999) 999 - 9999");
-  $("#phone1").mask("(999) 999 - 9999");
+  $("#phone").mask("(000) 000 - 0000");
+  $("#phone1").mask("(000) 000 - 0000");
 
   callNumber.addEventListener("input", function() {
     callNumber.classList.remove("invalid");
