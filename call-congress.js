@@ -28,27 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var spinner = document.querySelector(".fa-spinner");
 
   $("#phone").mask("(999) 999 - 9999");
-  $("#phone").on("blur", function() {
-    processPhone();
-  });
-
-
   $("#phone1").mask("(999) 999 - 9999");
-  $("#phone1").on("blur", function() {
-    processPhone();
-  });
-
-function processPhone() {
-  var last = $(this).val().substr( $(this).val().indexOf("-") + 1 );
-  if( last.length == 3 ) {
-    var move = $(this).val().substr( $(this).val().indexOf("-") - 1, 1 );
-    var lastfour = move + last;
-    var first = $(this).val().substr( 0, 9 );
-
-    $(this).val( first + '-' + lastfour );
-  }
-
-}
 
   callNumber.addEventListener("input", function() {
     callNumber.classList.remove("invalid");
