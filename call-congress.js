@@ -120,7 +120,7 @@ function reqListener (e) {
 
   var openCallscript = document.querySelector(".call-script-link a");
   openCallscript.addEventListener("click", function() {
-
+    $(".phone-label-warning").removeClass("phone-label-warning").addClass("phone-label-secured")
     $(".call-script").removeClass('blue').addClass('light');
     contentContainer.classList.remove("page-1");
     readyScript.classList.remove("hidden");
