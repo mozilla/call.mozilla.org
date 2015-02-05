@@ -1,0 +1,148 @@
+<html>
+
+<head>
+  <script src="call-congress.js"></script>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300|Fira+Sans:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="call-congress.css" rel="stylesheet" type="text/css">
+  <script src="jquery.js"></script>
+  <script src="mask.js"></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="content-container page-1">
+
+      <header>
+        <div class="branding-top">
+          <img src="./mozilla_wordmark.png" width="120px" />
+        </div>
+      </header>
+
+            <div class="calling-status hide">
+              <p><i class="fa fa-spinner spinner-call"></i> <span class="line-break">We are calling you now.</span> Voice prompts will help guide you.</p>
+            </div>
+
+      <!-- page 2 preview script starts here -->
+      <div class="page-2-wrapper hidden">
+        <div class="call-script-container">
+          <div class="call-script-message">
+            Here's what to say when you connect.
+          </div>
+
+          <div class="container">
+              <div class="call-script">
+                <div class="call-script-heading">
+                  Hello, my name is
+                  <span class="highlight hl1"> your name </span>and I am a voter from
+                  <span class="highlight hl2"> city, state.</span>
+                </div>
+                <p class="script-text">
+                  I am calling because the Federal Communications Commissioners will take a vote February 26<span class="number">th</span> on Net Neutrality rules.
+                  I want the FCC to do all it can and put strong protections in place. I expect you to do the same. <b>Thank you.</b>
+                </p>
+              </div>
+
+
+
+              <div class="ready-to-call">
+                <div class="ready-header">Ready to call?</div>
+                <p class="sub-ready">Enter your phone number and we'll connect you with your official.</p>
+                <div class="phone-container-holder">
+                  <div class="phone-container">
+                    <div class="phone-input-container">
+                      <label class="phone-label-secured phone-label-top">
+                        <input class="call-number-2" id="phone" type="tel" placeholder="(555) 555 - 555">
+                      </label>
+                    </div>
+                    <div class="phone-error-2 hidden">
+                      <span>Uh oh! Something's not right.</span> Try checking the number again.
+                    </div>
+                    <div class="call-now-button-container">
+                      <button class="call-now-button-2"><i class="fa fa-spinner hidden"></i> Get started <i class="fa fa-angle-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calling-tips-container">
+                <div class="tips-heading">Tips</div>
+                <div class="calling-tip">If you get a voicmail,
+                  <span>leave a message.</span>
+                </div>
+                <div class="calling-tip">When a call finishes, don't hand up.
+                  <span>Press the * (star) key</span> to call your next official.</div>
+                <div style="display: none;" class="calling-tip">Please
+                  <span class="blue-highlight">report how your call went</span> so we can continue to improve the experience.</div>
+              </div>
+              <div style="clear:both"></div>
+          </div>
+        </div>
+      </div>
+      <!-- page 2 preview script ends here -->
+
+      <!-- first page starts here -->
+      <div class="message">The FCC votes on Net Neutrality in...</div>
+      <div class="count-down">
+        <div class="count-down-top"></div>
+        <div class="count-down-bottom"></div>
+        <div class="count-down-text">
+          <span class="days-left"></span> days
+        </div>
+      </div>
+      <div class="center-block page-1-wrapper">
+
+
+          <div class="every-call-count-container">
+            <div class="every-call-counts">
+              <span>Every</span> call counts.</div>
+            <p>
+              Even if it's the first time you've ever called an elected official, we've made it easy. We'll call you right away and connect you with a representative.
+            </p>
+          </div>
+
+          <div class="phone-container">
+            <div class="phone-input-container">
+              <div class="enter-number"><i class="fa fa-mobile"></i>Enter your phone number</div>
+              <label class="phone-label-secured">
+                <input class="call-number" id="phone1" type="tel" placeholder="(555) 555 - 555">
+              </label>
+            </div>
+            <div class="phone-error">
+              <span>Uh oh! Something's not right.</span> Try checking the number again.
+            </div>
+            <div class="call-now-button-container">
+              <button class="call-now-button"><i class="fa fa-spinner"></i> Get started <i class="fa fa-angle-right"></i>
+              </button>
+              <div class="call-script-link"><a href="#">Preview the call script.</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- first page ends here -->
+
+
+
+      <div class="push"></div>
+        <div class="footer">
+          <div class="footer-container">
+            <div class="branding">
+              <div class="branding-bottom">mozilla</div>
+              <img src="./logo-twilio.png" width="90px" />
+            </div>
+            <div class="disclaimer">
+              Your call is connected with the help of a company called Twilio.
+              In order to connect you with your correct elected official in the U.S.
+              Congress and with the FSS, Twilio asks for your zip code. Twilio also collects
+              your phone number to connect your call. This information will be stored for no
+              more than 30 days, and will not be used for any other purposes.
+              For more information, see <a target="_blank" href="https://www.twilio.com/legal/privacy">Twilio's privacy policy.</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

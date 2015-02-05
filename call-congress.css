@@ -1,28 +1,140 @@
-body {
-  background: #969696;
+* {
   margin: 0;
-  padding: 30px 30px 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
   text-align: center;
   color: #565656;
   font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-div {
-  box-sizing: border-box;
-  padding-bottom: 18px;
+.hidden {
+  display: none !important;
 }
 
+.footer, .push {
+  height: 50px; /* .push must be the same height as .footer */
+}
+
+.page-2-wrapper .ready-to-call button {
+  max-width: 290px;
+  height: 70px;
+}
+
+.page-2-wrapper .ready-to-call input {
+  max-width: 230px;
+  height: 50px;
+}
+
+.page-2-wrapper .ready-to-call .phone-error {
+  height: 35px;
+  font-size: 14px;
+}
+
+
+.call-script p {
+  color: #565656;
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 17px;
+}
+
+.call-script div {
+  color: #565656;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.call-script-heading {
+    font-size: 33px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+
+.page-2-wrapper .container {
+    margin-top: 45px;
+    position: relative;
+}
+
+.page-2-wrapper .ready-to-call {
+  float: left;
+  width: 42%;
+  max-width: 380px;
+}
+
+.call-script {
+  color: #FFF;
+  background: none repeat scroll 0% 0% #F2FAFD;
+  padding: 27px 20px 20px 25px;
+  border-radius: 15px;
+  text-align: left;
+  margin: 0 65px;
+  width: 38.5%;
+  float: left;
+  max-width: 540px;
+  position: relative;
+}
+
+.blue:before {
+  content: url('./img-bubble-corner-blue.svg');
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 37px;
+  height: 35px;
+  top: -30px;
+  left: 12px;
+}
+.light:before {
+  content: url('./img-bubble-corner-light.svg');
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 37px;
+  height: 35px;
+  top: -30px;
+  left: 12px;
+}
+.sub-ready {
+  padding: 10px 35px !important;
+}
 .content-container {
   background: #EDEAE3;
   background: linear-gradient(to bottom, #D7D3C8, #F6F4EC);
-  padding: 18px;
+  padding: 18px 18px 0px 18px;
 }
 .call-number.invalid {
   border: 3px solid #BD372E;
 }
+
+.invalid {
+  border: 2px solid #BD372E;
+}
 .phone-error.show {
   display: block;
 }
+.phone-error-2 {
+  background: #FFF2F2;
+  color: #BD372E;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 14px !important;
+  max-width: 253px;
+  margin: 0 auto 18px;
+}
+
+.phone-error-2 span {
+  font-weight: bold;
+}
+
+.clearfix {
+  overflow: auto;
+  width: 100%;
+}
+
 .phone-error {
   display: none;
   background: #FFF2F2;
@@ -34,10 +146,19 @@ div {
   margin: 0 auto 18px;
 }
 
-.phone-error span {
+.phone-error-2 span {
   font-weight: bold;
 }
-.branding {
+.branding-top {
+  text-align: left;
+  font-family: "Fira Sans";
+  font-size: 37px;
+  margin-left: 70px;
+  margin-top: -5px;
+  margin-bottom: -40px;
+  height: 95px;
+}
+.branding-bottom {
   text-align: left;
   font-family: "Fira Sans";
   font-size: 26px;
@@ -47,13 +168,14 @@ div {
   padding: 0;
   margin: 0 auto 18px;
   max-width: 400px;
+  float: left;
 }
 .calling-tip {
   text-align: left;
   background: #ECE9E0;
   border-top: 1px solid #DBD8D8;
-  padding: 10px;
-  font-size: 13px;
+  padding: 20px;
+  font-size: 16px;
 }
 .calling-tip span {
   font-weight: bold;
@@ -61,12 +183,15 @@ div {
 .message,
 .call-script-message,
 .tips-heading {
-  font-size: 32px;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 100;
+  text-align: left;
+  padding-left: 75px;
 }
 .page-call-script .highlight {
-  background: #9C988C;
-  color: #eaeaea;
+  background: #DFF0FA;
+  color: #9EA3A6;
+  padding: 0 10px;
 }
 .page-calling .highlight {
   background: #0475BB;
@@ -80,59 +205,62 @@ div {
   vertical-align: super;
   font-size: 12px;
 }
-.page-call-script .call-script {
-  background: #B6B2A7;
+
+.page-1 div.every-call-count-container {
+  margin-top: 32px;
+  width: 50%;
+  float: left;
 }
-.page-calling .call-script {
-  background: #0195DD;
+.page-1 .call-now-button {
+  height: 70px;
+  max-width: 290px !important;
+  margin-left: -20px;
+  width: 290px;
 }
-.call-script {
-  color: #FFFFFF;
-  padding: 0 18px 18px;;
-  border-radius: 15px;
-  text-align: left;
-  margin: 18px 0;
-}
-.call-script p {
-  display: inline-block;
-  margin-bottom: 0;
-}
-.every-call-count-container,
+
 .ready-to-call {
-  max-width: 400px;
-  margin: auto;
+  background: #FFF;
+  padding: 18px 0 0;
+
 }
+
+.ready-to-call p {
+  padding: 10px;
+  font-size: 16px;
+}
+
 .every-call-counts,
 .ready-to-call div {
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 300;
 }
-.ready-to-call {
-  padding: 18px 0 0;
-}
+
 .every-call-counts span {
   font-style: italic;
-}
-.content {
-  background: #FFFFFF;
-  padding: 30px 18px 18px;
-  font-size: 14px;
-  margin: 36px auto;
-  overflow: hidden;
-}
-.content a {
-  font-weight: bold;
 }
 .footer-container {
   padding: 0;
   margin: auto;
-  max-width: 600px;
+  max-width: 775px;
+}
+
+.branding {
+  width: 20%;
+  float: left;
+}
+.disclaimer {
+  font-size: 12px;
+  width: 80%;
+  float: left;
 }
 .footer {
   background: #FFFFFF;
   padding: 16px;
   text-align: left;
   color: #BBBBBB;
+  margin-right: -3px;
+  margin-left: -3px;
+  width: 100%;
 }
 button, input {
   margin-bottom: 18px;
@@ -142,7 +270,9 @@ button, input {
 }
 
 input {
-  padding: 5px 0px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 15px 0px;
   border: solid 1px #D0D0D0;
   box-shadow: inset 0 5px 4px -4px #E3E3E3;
   background: #FAFAFA;
@@ -169,14 +299,13 @@ button {
   padding: 0 18px;
   max-width: 253px;
   margin: auto;
+  position: relative;
 }
 .phone-input-container div {
   padding: 0;
   margin-bottom: 5px;
 }
-.disclaimer {
-  font-size: 12px;
-}
+
 a {
   color: #27AAE1;
   text-decoration: none;
@@ -184,10 +313,10 @@ a {
 .count-down {
   color: white;
   position: relative;
-  width: 145px;
-  height: 70px;
+  width: 190px;
+  height: 90px;
   padding: 0;
-  margin: 18px auto 54px;
+  margin: 18px auto 49px;
   display: none;
 }
 .count-down-text {
@@ -195,18 +324,18 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
-  font-size: 25px;
+  font-size: 29px;
   font-weight: 300;
   padding: 0;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px;
 }
 .phone-input-container div .fa-mobile {
-  font-size: 18px;
-  margin: 0 5px;
+  font-size: 35px;
+  margin: 0px 15px;
   vertical-align: bottom;
 }
 .days-left {
-  font-size: 51px;
+  font-size: 65px;
   font-weight: bold;
 }
 .count-down-top {
@@ -227,7 +356,6 @@ a {
   top: 50%;
   border-radius: 3px;
 }
-.branding,
 .call-script-container {
   margin-left: auto;
   margin-right: auto;
@@ -235,42 +363,328 @@ a {
 .call-script-container {
   padding: 0;
 }
-.phone-container {
+.page-1 .phone-container {
+  padding: 0;
+  width: 50%;
+  float: left;
+}
+
+.page-1-wrapper {
+  background: #FFF;
+  max-width: 690px;
+  padding: 20px 35px;
+  overflow: hidden;
+}
+.page-1-wrapper a {
+  font-weight: bold;
+}
+
+.blue-script-bg {
+  background: #0195DD;
+  color: #D7ECFE;
+}
+
+.spinner-call {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.blue-text-bg {
+  background: #437BC7;
+  color: #D7ECFE;
+  padding: 0 10px;
+}
+
+.white-text {
+  color: #FFF !important;
+}
+
+.phone-label-secured:before {
+    color: #B5B1A6;
+    content:"\f023";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 2px;
+    left: 25px;
+    font-size: 18px;
+}
+
+.top-red:before {
+  top: 24px !important;
+}
+
+.phone-label-top:before {
+  top: 23px;
+}
+
+.phone-label-warning:before {
+  color: #C83933;
+  content: "\f071";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 2px;
+  left: 25px;
+  font-size: 18px;
+}
+
+.phone-label-secured {
+  position: relative;
+}
+
+.phone-label-warning {
+  position: relative;
+}
+
+.highlight {
+   display: inline-block;
+   border-radius: 13px;
+   padding: 0px 5 3px 7;
+   margin-right: 3px;
+ }
+
+@media screen
+and (min-width : 320px)
+and (max-width : 480px) {
+  .tips-heading {
+    font-size: 30px;
+    margin: 30px 0 15px 0;
+  }
+  .calling-tip {
+    padding: 14px;
+    font-size: 14px;
+  }
+  .branding {
+    float: left;
+    width: 100%;
+  }
+  .call-script p {
+    font-size: 15px;
+    font-weight: 200;
+  }
+  .branding-bottom {
+    width: 40%;
+    float: left;
+  }
+  .disclaimer {
+    width: 100%;
+    float: none;
+  }
+  input {
+    font-size: 14px;
+    font-weight: 200;
+    padding: 8px 0px;
+  }
+  .call-script-message {
+    font-size: 35px;
+  }
+  .line-break {
+    padding-top: 5px;
+    display: block;
+  }
+  .spinner-call {
+    display: block;
+  }
+  .calling-status p {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+  .enter-number {
+    font-size: 14px;
+  }
+  .page-1-wrapper {
+    max-width: 280px;
+  }
+  .every-call-count-container {
+    float: none;
+    width: 100%;
+  }
+  .page-1-wrapper .phone-container {
+    float: none;
+    width: 100%;
+  }
+  .page-1-wrapper .call-now-button {
+    width: 240px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .call-script-link {
+    padding-top: 15px;
+  }
+  .page-1 .message {
+    font-size: 35px;
+  }
+  .branding-top {
+    margin-left: 0;
+  }
+  .count-down {
+    width: 145px;
+    height: 70px;
+  }
+  .call-script {
+    float: none;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .page-2-wrapper .ready-to-call {
+    float: none;
+    width: 100%;
+    max-width: 320px;
+    margin: 45px auto auto auto;
+  }
+  .call-script-heading {
+    font-size: 29px;
+  }
+  .days-left {
+    font-size: 45px;
+  }
+  .count-down-text {
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 5px 0;
+  }
+  div.every-call-counts {
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+  }
+  .every-call-count-container p {
+    font-size: 14px;
+  }
+  .page-1 div.every-call-count-container {
+    margin-top: 0;
+    width: 100%;
+    float: none;
+  }
+  .page-1 .phone-input-container div .fa-mobile {
+    font-size: 22px;
+    margin-right: 10px;
+    margin-top: 15px;
+  }
+  .phone-input-container {
+    max-width: 270px;
+    padding: 0;
+  }
+  .page-1 .phone-input-container div {
+    font-size: 12px;
+  }
+  .phone-error {
+    font-size: 13px;
+  }
+  .message, .call-script-message, .tips-heading {
+    padding-left: 0;
+  }
+}
+
+
+.call-script-message {
+  text-alight: left;
+}
+
+.tips-heading {
+  text-align: center;
   padding: 0;
 }
-/* Media queires */
+
+@media screen
+and (min-width : 480px)
+and (max-width : 940px) {
+  .call-script {
+    float: none;
+    width: 50%;
+    margin: 0 auto 30 auto;
+  }
+  .page-2-wrapper .ready-to-call {
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .page-2-wrapper .call-now-button-container {
+    margin: 0 auto;
+  }
+  .page-2-wrapper .calling-tips-container {
+    margin: 0 auto;
+    width: 50%;
+    float: none;
+  }
+}
+
+@media screen
+and (min-width : 490px)
+and (max-width : 780px) {
+  .page-1-wrapper {
+    height: 220px;
+    max-width: 500px;
+  }
+  .page-1-wrapper .call-now-button {
+    width: 240px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .call-script-link {
+    padding-top: 15px;
+  }
+  .page-1 .message {
+    font-size: 35px;
+  }
+  .branding-top {
+    margin-left: 0;
+  }
+  .count-down {
+    width: 145px;
+    height: 70px;
+  }
+  .days-left {
+    font-size: 45px;
+  }
+  .count-down-text {
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 5px 0;
+  }
+  div.every-call-counts {
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+  }
+  .every-call-count-container p {
+    font-size: 14px;
+  }
+  .page-1 div.every-call-count-container {
+    margin-top: 0;
+    width: 50%;
+    float: left;
+  }
+  .call-now-button-container {
+    margin-right: -10px;
+  }
+  .page-1 .phone-input-container div .fa-mobile {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  .page-1 .phone-input-container div {
+    font-size: 12px;
+  }
+  .phone-error {
+    font-size: 12px;
+    max-width: 200px;
+  }
+}
+
+.center-block {
+  display: block;
+  margin: 0 auto;
+}
+
 .main-container {
   max-width: 325px;
   margin: auto;
-  padding-bottom: 30px;
 }
-@media screen and (min-width: 480px) {
-  .main-container {
-    max-width: 1140px;
-  }
-  .call-script-container,
-  .branding,
-  .content {
-    max-width: 600px;
-  }
+.main-container {
+  max-width: 100%;
 }
-@media screen and (min-width: 768px) {
-  .call-now-button-container,
-  .phone-container {
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    min-width: 281px;
-  }
-  .phone-error {
-    margin: auto;
-  }
-}
-@media screen and (min-width: 992px) {
 
-}
-@media screen and (min-width: 1200px) {
-}
 .every-call-count-container,
 .call-script-container,
 .calling-status,
@@ -312,7 +726,7 @@ a {
   -ms-animation-duration: 2000ms;
   -ms-animation-iteration-count: infinite;
   -ms-animation-timing-function: linear;
-  
+
   animation-name: spin;
   animation-duration: 2000ms;
   animation-iteration-count: infinite;
