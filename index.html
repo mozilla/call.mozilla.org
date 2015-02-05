@@ -10,15 +10,13 @@
 <body>
   <div class="main-container">
     <div class="content-container page-1">
-      <div class="row">
-        <div class="col-md-4">
-          <header>
-            <div class="branding-top">
-              <img src="./mozilla_wordmark.png" width="120px" />
-            </div>
-          </header>
+
+      <header>
+        <div class="branding-top">
+          <img src="./mozilla_wordmark.png" width="120px" />
         </div>
-      </div>
+      </header>
+
 
       <!-- page 2 preview script starts here -->
       <div class="page-2-wrapper hidden">
@@ -26,8 +24,8 @@
           <div class="call-script-message">
             Here's what to say when you connect.
           </div>
-          <div class="container">
-            <div class="left-panel">
+          <div class="container clearfix">
+
 
               <div class="call-script">
                 <div class="call-script-heading">
@@ -41,16 +39,29 @@
                   I want the FCC to do all it can and put strong protections in place. I expect you to do the same. <b>Thank you.</b>
                 </p>
               </div>
-            </div>
-            <div class="right-panel">
+
+
+
               <div class="ready-to-call">
                 <div class="ready-header">Ready to call?</div>
                 <p>When you're ready, hit the 'Call now' button. You;ll still be able to see the script when the phone rings.</p>
-                <input class="call-number" type="tel" placeholder="(555) 555 - 555">
-                <button class="call-now-button"><i class="fa fa-spinner"></i> Get started <i class="fa fa-angle-right"></i>
-                </button>
+                <div class="phone-container-holder">
+                  <div class="phone-container">
+                    <div class="phone-input-container">
+                      <input class="call-number-2" type="tel" placeholder="(555) 555 - 555">
+                    </div>
+                    <div class="phone-error-2 hidden">
+                      <span>Uh oh! Something's not right.</span> Try checking the number again.
+                    </div>
+                    <div class="call-now-button-container">
+                      <button class="call-now-button-2"><i class="fa fa-spinner hidden"></i> Get started <i class="fa fa-angle-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
+
+
           </div>
         </div>
       </div>
@@ -68,7 +79,6 @@
       <div class="center-block page-1-wrapper">
 
 
-        <div class="left-panel">
           <div class="every-call-count-container">
             <div class="every-call-counts">
               <span>Every</span> call counts.</div>
@@ -76,23 +86,22 @@
               Even if it's the first time you've ever calls an elected official, we've made it easy. We'll call you right away and connect you with a representative.
             </p>
           </div>
-        </div>
-        <div class="right-panel">
+
           <div class="phone-container">
             <div class="phone-input-container">
-              <div><i class="fa fa-mobile"></i>Enter your phone number</div>
+              <div class="enter-number"><i class="fa fa-mobile"></i>Enter your phone number</div>
               <input class="call-number" type="tel" placeholder="(555) 555 - 555">
             </div>
             <div class="phone-error">
-              <span>Uh oh! Something's not right.</span> Try checking the number again.</div>
-          </div>
-          <div class="call-now-button-container">
-            <button class="call-now-button"><i class="fa fa-spinner"></i> Get started <i class="fa fa-angle-right"></i>
-            </button>
-            <div class="call-script-link"><a href="#">Preview the call script.</a>
+              <span>Uh oh! Something's not right.</span> Try checking the number again.
+            </div>
+            <div class="call-now-button-container">
+              <button class="call-now-button"><i class="fa fa-spinner"></i> Get started <i class="fa fa-angle-right"></i>
+              </button>
+              <div class="call-script-link"><a href="#">Preview the call script.</a>
+              </div>
             </div>
           </div>
-        </div>
       </div>
       <!-- first page ends here -->
 

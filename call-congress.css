@@ -23,6 +23,22 @@ body {
   height: 500px;
 }
 
+.page-2-wrapper .ready-to-call button {
+  max-width: 290px;
+  height: 70px;
+}
+
+.page-2-wrapper .ready-to-call input {
+  max-width: 230px;
+  height: 45px;
+}
+
+.page-2-wrapper .ready-to-call .phone-error {
+  height: 35px;
+  font-size: 14px;
+}
+
+
 .call-script p {
   color: #565656;
   display: inline-block;
@@ -44,26 +60,23 @@ body {
 
 .page-2-wrapper .container {
     margin-top: 45px;
-    max-width: 1155px;
     position: relative;
 }
 
 .page-2-wrapper .ready-to-call {
-  position: absolute;
-  right: -65px;
+  float: left;
+  width: 42%;
 }
 
 .call-script {
-  color: #FFFFFF;
-  background: #F2FAFD;
+  color: #FFF;
+  background: none repeat scroll 0% 0% #F2FAFD;
   padding: 27px 20px 20px 25px;
   border-radius: 15px;
   text-align: left;
-  margin: 0 18px 0;
-  width: 500px;
-  display: block;
-  position: relative;
-  height: 225px;
+  margin: 0px 18px;
+  width: 50%;
+  float: left;
 
 }
 .call-script:before
@@ -93,6 +106,25 @@ body {
 .phone-error.show {
   display: block;
 }
+.phone-error-2 {
+  background: #FFF2F2;
+  color: #BD372E;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 14px !important;
+  max-width: 253px;
+  margin: 0 auto 18px;
+}
+
+.phone-error-2 span {
+  font-weight: bold;
+}
+
+.clearfix {
+  overflow: auto;
+  width: 100%;
+}
+
 .phone-error {
   display: none;
   background: #FFF2F2;
@@ -104,7 +136,7 @@ body {
   margin: 0 auto 18px;
 }
 
-.phone-error span {
+.phone-error-2 span {
   font-weight: bold;
 }
 .branding-top {
@@ -165,6 +197,8 @@ body {
 
 .page-1 div.every-call-count-container {
   margin-top: 32px;
+  width: 50%;
+  float: left;
 }
 .page-1 .call-now-button {
   height: 70px;
@@ -174,10 +208,7 @@ body {
 }
 
 .ready-to-call {
-  width: 380px;
-  height: 300px;
   background: #FFF;
-  margin-right: 70px;
   padding: 18px 0 0;
 
 }
@@ -309,38 +340,30 @@ a {
 .call-script-container {
   padding: 0;
 }
-.phone-container {
+.page-1 .phone-container {
   padding: 0;
+  width: 50%;
+  float: left;
+}
+
+.phone-container-holder {
+  float: left;
+  width: 40%;
 }
 
 .page-1-wrapper {
   background: #FFF;
   max-width: 690px;
-  height: 260px;
   padding: 20px 35px;
-  overflow:hidden;
+  overflow: hidden;
 }
 .page-1-wrapper a {
   font-weight: bold;
 }
 
-.left-panel {
-  float:left;
-  margin-right:20px;
-  width: 50%;
-}
-.right-panel {
-  float: right;
-}
-
 @media screen
 and (min-width : 320px)
 and (max-width : 480px) {
-  .left-panel {
-    float: none;
-    margin-right:0;
-    width:auto;
-  }
   .page-1-wrapper {
     height: 360px;
     max-width: 215px;
@@ -381,6 +404,8 @@ and (max-width : 480px) {
   }
   .page-1 div.every-call-count-container {
     margin-top: 0;
+    width: 50%;
+    float: left;
   }
   .call-now-button-container {
     margin-right: -10px;
@@ -406,12 +431,6 @@ and (max-width : 480px) {
 @media screen
 and (min-width : 490px)
 and (max-width : 780px) {
-   .left-panel {
-    float: left;
-    margin-left: -10px;
-    width:auto;
-    max-width: 250px;
-  }
   .page-1-wrapper {
     height: 220px;
     max-width: 500px;
@@ -452,6 +471,8 @@ and (max-width : 780px) {
   }
   .page-1 div.every-call-count-container {
     margin-top: 0;
+    width: 50%;
+    float: left;
   }
   .call-now-button-container {
     margin-right: -10px;
