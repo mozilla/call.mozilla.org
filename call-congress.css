@@ -98,7 +98,9 @@ body {
   top: -30px;
   left: 12px;
 }
-
+.sub-ready {
+  padding: 10px 35px !important;
+}
 .content-container {
   background: #EDEAE3;
   background: linear-gradient(to bottom, #D7D3C8, #F6F4EC);
@@ -172,8 +174,8 @@ body {
   text-align: left;
   background: #ECE9E0;
   border-top: 1px solid #DBD8D8;
-  padding: 10px;
-  font-size: 13px;
+  padding: 20px;
+  font-size: 16px;
 }
 .calling-tip span {
   font-weight: bold;
@@ -433,13 +435,31 @@ a {
   position: relative;
 }
 
+.highlight {
+   display: inline-block;
+   border-radius: 13px;
+   padding: 0px 5 3px 7;
+   margin-right: 3px;
+ }
+
 @media screen
 and (min-width : 320px)
 and (max-width : 480px) {
-
+  .tips-heading {
+    font-size: 30px;
+    margin: 30px 0 15px 0;
+  }
+  .calling-tip {
+    padding: 14px;
+    font-size: 14px;
+  }
   .branding {
     float: left;
     width: 100%;
+  }
+  .call-script p {
+    font-size: 15px;
+    font-weight: 200;
   }
   .branding-bottom {
     width: 40%;
