@@ -79,7 +79,7 @@ body {
 }
 
 .blue:before {
-  content: url('./img-bubble-corner-blue.svg');
+  content: url('../img-bubble-corner-blue.svg');
   display: block;
   position: absolute;
   left: 0;
@@ -89,7 +89,7 @@ body {
   left: 12px;
 }
 .light:before {
-  content: url('./img-bubble-corner-light.svg');
+  content: url('../img-bubble-corner-light.svg');
   display: block;
   position: absolute;
   left: 0;

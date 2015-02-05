@@ -6,6 +6,9 @@
     "url": "https://github.com/ScottDowne/call-congress-net-neutrality.git"
   },
   "dependencies": {
-    "express": "3.4.5"
+    "express": "3.4.5",
+    "gulp": "^3.8.10",
+    "gulp-minify-css": "^0.4.5",
+    "gulp-webserver": "^0.9.0"
   }
 }
