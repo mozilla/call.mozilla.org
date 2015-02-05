@@ -5,6 +5,8 @@
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300|Fira+Sans:700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href="call-congress.css" rel="stylesheet" type="text/css">
+  <script src="jquery.js"></script>
+  <script src="mask.js"></script>
 </head>
 
 <body>
@@ -36,7 +38,7 @@
                   <span class="highlight hl1"> your name </span>and I am a voter from
                   <span class="highlight hl2"> city, state.</span>
                 </div>
-                <p>
+                <p class="script-text">
                   I am calling because the Federal Communications Commissioners will take a vote Febuary 26
                   <span class="number">th</span> on Net Neutrality rules.
                   I want the FCC to do all it can and put strong protections in place. I expect you to do the same. <b>Thank you.</b>
@@ -51,7 +53,7 @@
                 <div class="phone-container-holder">
                   <div class="phone-container">
                     <div class="phone-input-container">
-                      <input class="call-number-2" type="tel" placeholder="(555) 555 - 555">
+                      <input class="call-number-2" id="phone" type="tel" placeholder="(555) 555 - 555">
                     </div>
                     <div class="phone-error-2 hidden">
                       <span>Uh oh! Something's not right.</span> Try checking the number again.
@@ -64,7 +66,16 @@
                 </div>
               </div>
 
-
+              <div class="calling-tips-container">
+                <div class="tips-heading">Tips</div>
+                <div class="calling-tip">If you get a voicmail,
+                  <span>leave a message.</span>
+                </div>
+                <div class="calling-tip">When a call finishes, don't hand up.
+                  <span>Press *</span> to connect to your next official.</div>
+                <div style="display: none;" class="calling-tip">Please
+                  <span class="blue-highlight">report how your call went</span> so we can continue to improve the experience.</div>
+              </div>
           </div>
         </div>
       </div>
@@ -93,7 +104,7 @@
           <div class="phone-container">
             <div class="phone-input-container">
               <div class="enter-number"><i class="fa fa-mobile"></i>Enter your phone number</div>
-              <input class="call-number" type="tel" placeholder="(555) 555 - 555">
+              <input class="call-number" id="phone1" type="tel" placeholder="(555) 555 - 555">
             </div>
             <div class="phone-error">
               <span>Uh oh! Something's not right.</span> Try checking the number again.
@@ -108,20 +119,9 @@
       </div>
       <!-- first page ends here -->
 
-      <div class="calling-tips-container">
-        <div class="tips-heading">Tips</div>
-        <div class="calling-tip">If you get a voicmail,
-          <span>leave a message.</span>
-        </div>
-        <div class="calling-tip">When a call finishes, don't hand up.
-          <span>Press *</span> to connect to your next official.</div>
-        <div style="display: none;" class="calling-tip">Please
-          <span class="blue-highlight">report how your call went</span> so we can continue to improve the experience.</div>
-      </div>
 
 
       <div class="push"></div>
-      <div class="row">
         <div class="footer">
           <div class="footer-container">
             <div class="branding-bottom">mozilla</div>
@@ -132,7 +132,6 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
 
 </body>

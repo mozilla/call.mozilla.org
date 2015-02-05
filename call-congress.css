@@ -151,6 +151,7 @@ body {
   padding: 0;
   margin: 0 auto 18px;
   max-width: 400px;
+  float: left;
 }
 .calling-tip {
   text-align: left;
@@ -363,7 +364,10 @@ a {
   background: #437BC7;
   color: #D7ECFE;
   padding: 0 10px;
+}
 
+.white-text {
+  color: #FFF !important;
 }
 
 @media screen
@@ -450,7 +454,14 @@ and (max-width : 480px) {
 }
 
 
+.call-script-message {
+  text-alight: left;
+}
 
+.tips-heading {
+  text-align: center;
+  padding: 0;
+}
 
 @media screen
 and (min-width : 490px)

@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
   var hl2 = document.querySelector(".hl1");
   var page1Div = document.querySelector(".page-1-wrapper");
   var page2Wrapper = document.querySelector(".page-2-wrapper");
+  var callScriptHeader = document.querySelector(".call-script-heading");
+  var scriptText = document.querySelector(".script-text");
   var boolButton1 = false;
   var boolButton2 = false;
 
@@ -25,6 +27,29 @@ document.addEventListener("DOMContentLoaded", function() {
   var callWrapper = document.querySelector(".page-1-wrapper");
   var spinner = document.querySelector(".fa-spinner");
 
+  $("#phone").mask("(999) 999 - 9999");
+  $("#phone").on("blur", function() {
+    processPhone();
+  });
+
+
+  $("#phone1").mask("(999) 999 - 9999");
+  $("#phone1").on("blur", function() {
+    processPhone();
+  });
+
+function processPhone() {
+  var last = $(this).val().substr( $(this).val().indexOf("-") + 1 );
+  if( last.length == 3 ) {
+    var move = $(this).val().substr( $(this).val().indexOf("-") - 1, 1 );
+    var lastfour = move + last;
+    var first = $(this).val().substr( 0, 9 );
+
+    $(this).val( first + '-' + lastfour );
+  }
+
+}
+
   callNumber.addEventListener("input", function() {
     callNumber.classList.remove("invalid");
     callNumberError.classList.remove("show");
@@ -35,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
     boolButton1 = true;
     boolButton2 = false;
     callButton.classList.add("waiting");
-    makeCall();
+    makeCall(callNumber.value);
   });
 
   callNumber2.addEventListener("input", function() {
@@ -49,15 +74,15 @@ document.addEventListener("DOMContentLoaded", function() {
     boolButton2 = true;
     callButton2.classList.add("waiting");
     spinner.classList.remove("hidden");
-    makeCall();
+    makeCall(callNumber2.value);
   });
 
 
-function makeCall() {
+function makeCall(value) {
   var url = "https://callcongress.mofostaging.net/create?campaignId=fcc-blanket&userPhone=";
   var oReq = new XMLHttpRequest();
   oReq.onload = reqListener;
-  oReq.open("post", url + callNumber.value, true);
+  oReq.open("post", url + value, true);
   oReq.send();
 }
 
@@ -66,22 +91,24 @@ function reqListener (e) {
   callButton.classList.remove("waiting");
   callButton2.classList.remove("waiting");
   spinner.classList.add("hidden");
-  // if (data.message !== "queued") {
-  //   if(boolButton1) {
-  //     callNumber.classList.add("invalid");
-  //     callNumberError.classList.add("show");
-  //   } else {
-  //     callNumber2.classList.add("invalid");
-  //     callNumberError2.classList.add("show");
-  //     callNumberError2.classList.remove("hidden");
-  //   }
-  //   return;
-  // }
+  if (data.message !== "queued") {
+    if(boolButton1) {
+      callNumber.classList.add("invalid");
+      callNumberError.classList.add("show");
+    } else {
+      callNumber2.classList.add("invalid");
+      callNumberError2.classList.add("show");
+      callNumberError2.classList.remove("hidden");
+    }
+    return;
+  }
 
   page2Wrapper.classList.remove("hidden");
   callScript.classList.add("blue-script-bg");
   hl1.classList.add("blue-text-bg");
   hl2.classList.add("blue-text-bg");
+  callScriptHeader.classList.add("white-text")
+  scriptText.classList.add("white-text")
   spinner.classList.remove("hidden");
   contentContainer.removeChild(page1Div)
   contentContainer.classList.remove("page-1");
