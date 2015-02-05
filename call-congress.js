@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var callNumber = document.querySelector(".call-number");
   var callNumberError = document.querySelector(".phone-error");
-  var callWrapper = document.querySelector(".wrapper");
+  var callWrapper = document.querySelector(".page-1-wrapper");
 
   callNumber.addEventListener("input", function() {
     callNumber.classList.remove("invalid");
@@ -56,8 +56,14 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   var openCallscript = document.querySelector(".call-script-link a");
+  var readyScript = document.querySelector(".ready-to-call");
+  var page2Wrapper = document.querySelector(".page-2-wrapper");
+
   openCallscript.addEventListener("click", function() {
     contentContainer.classList.remove("page-1");
+    readyScript.classList.remove("hidden");
+    page2Wrapper.classList.remove("hidden");
+    callWrapper.classList.add("hidden");
     contentContainer.classList.add("page-call-script");
     contentContainer.classList.remove("page-calling");
   });

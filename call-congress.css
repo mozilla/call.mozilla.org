@@ -11,8 +11,66 @@ body {
   font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .footer, .push {
   height: 50px; /* .push must be the same height as .footer */
+}
+
+.page-2-wrapper {
+  height: 500px;
+}
+
+.call-script p {
+  color: #565656;
+}
+
+.call-script-heading {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.page-2-wrapper .container {
+  margin-top: 45px;
+}
+
+.call-script {
+  color: #FFFFFF;
+  background: #FFF;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: left;
+  margin: 0 18px 0;
+  width: 540px;
+  display: block;
+  position: relative;
+
+}
+.call-script:before
+{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  bottom: 200;
+  border: 15px solid;
+  border-color: transparent transparent #FFF #FFF;
+}
+.speech {
+  position: relative;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: #FFF;
+  border-radius: 8px;
+}
+
+.page-2-wrapper .left-panel {
+  padding-left: 75px;
 }
 
 .content-container {
@@ -73,12 +131,15 @@ body {
 .message,
 .call-script-message,
 .tips-heading {
-  font-size: 48px;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 100;
+  text-align: left;
+  padding-left: 75px;
 }
 .page-call-script .highlight {
-  background: #9C988C;
-  color: #eaeaea;
+  background: #DFF0FA;
+  color: #9EA3A6;
+  padding: 0 5px;
 }
 .page-calling .highlight {
   background: #0475BB;
@@ -92,19 +153,7 @@ body {
   vertical-align: super;
   font-size: 12px;
 }
-.page-call-script .call-script {
-  background: #B6B2A7;
-}
-.page-calling .call-script {
-  background: #0195DD;
-}
-.call-script {
-  color: #FFFFFF;
-  padding: 0 18px 18px;;
-  border-radius: 15px;
-  text-align: left;
-  margin: 18px 0;
-}
+
 .call-script p {
   display: inline-block;
   margin-bottom: 0;
@@ -118,19 +167,27 @@ body {
   margin-left: -20px;
   width: 290px;
 }
-.every-call-count-container,
+
 .ready-to-call {
-  max-width: 400px;
-  margin: auto;
+  width: 380px;
+  height: 300px;
+  background: #FFF;
+  margin-right: 70px;
+  padding: 18px 0 0;
+
 }
+
+.ready-to-call p {
+  padding: 10px;
+  font-size: 16px;
+}
+
 .every-call-counts,
 .ready-to-call div {
   font-size: 35px;
   font-weight: 300;
 }
-.ready-to-call {
-  padding: 18px 0 0;
-}
+
 .every-call-counts span {
   font-style: italic;
 }
@@ -251,14 +308,14 @@ a {
   padding: 0;
 }
 
-.wrapper {
+.page-1-wrapper {
   background: #FFF;
   max-width: 690px;
   height: 260px;
   padding: 20px 35px;
   overflow:hidden;
 }
-.wrapper a {
+.page-1-wrapper a {
   font-weight: bold;
 }
 
@@ -272,18 +329,18 @@ a {
 }
 
 @media screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
+and (min-width : 320px)
+and (max-width : 480px) {
   .left-panel {
     float: none;
     margin-right:0;
     width:auto;
   }
-  .wrapper {
+  .page-1-wrapper {
     height: 360px;
     max-width: 215px;
   }
-  .wrapper .call-now-button {
+  .page-1-wrapper .call-now-button {
     width: 240px;
     height: 50px;
     margin: 0 auto;
@@ -333,25 +390,28 @@ and (max-device-width : 480px) {
   .phone-error {
     font-size: 13px;
   }
+  .message, .call-script-message, .tips-heading {
+    padding-left: 0;
+  }
 }
 
 
 
 
 @media screen
-and (min-device-width : 490px)
-and (max-device-width : 780px) {
+and (min-width : 490px)
+and (max-width : 780px) {
    .left-panel {
     float: left;
     margin-left: -10px;
     width:auto;
     max-width: 250px;
   }
-  .wrapper {
+  .page-1-wrapper {
     height: 220px;
     max-width: 500px;
   }
-  .wrapper .call-now-button {
+  .page-1-wrapper .call-now-button {
     width: 240px;
     height: 50px;
     margin: 0 auto;
