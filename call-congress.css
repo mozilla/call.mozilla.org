@@ -75,18 +75,29 @@ body {
   width: 38.5%;
   float: left;
   max-width: 540px;
+  position: relative;
 }
-/* .arrow
-{
-  content: ' ';
+
+.blue:before {
+  content: url('./img-bubble-corner-blue.svg');
+  display: block;
   position: absolute;
-  width: 0;
-  height: 0;
-  left: 30px;
-  bottom: 265px;
-  border: 15px solid;
-  border-color: transparent transparent #F2FAFD #F2FAFD;
-} */
+  left: 0;
+  width: 37px;
+  height: 35px;
+  top: -30px;
+  left: 12px;
+}
+.light:before {
+  content: url('./img-bubble-corner-light.svg');
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 37px;
+  height: 35px;
+  top: -30px;
+  left: 12px;
+}
 
 .content-container {
   background: #EDEAE3;
@@ -224,7 +235,17 @@ body {
 .footer-container {
   padding: 0;
   margin: auto;
-  max-width: 600px;
+  max-width: 775px;
+}
+
+.branding {
+  width: 20%;
+  float: left;
+}
+.disclaimer {
+  font-size: 12px;
+  width: 80%;
+  float: left;
 }
 .footer {
   background: #FFFFFF;
@@ -233,6 +254,7 @@ body {
   color: #BBBBBB;
   margin-right: -3px;
   margin-left: -3px;
+  width: 100%;
 }
 button, input {
   margin-bottom: 18px;
@@ -242,6 +264,8 @@ button, input {
 }
 
 input {
+  font-size: 16px;
+  font-weight: 200;
   padding: 15px 0px;
   border: solid 1px #D0D0D0;
   box-shadow: inset 0 5px 4px -4px #E3E3E3;
@@ -269,14 +293,13 @@ button {
   padding: 0 18px;
   max-width: 253px;
   margin: auto;
+  position: relative;
 }
 .phone-input-container div {
   padding: 0;
   margin-bottom: 5px;
 }
-.disclaimer {
-  font-size: 12px;
-}
+
 a {
   color: #27AAE1;
   text-decoration: none;
@@ -351,7 +374,7 @@ a {
 }
 
 .blue-script-bg {
-  background: #5293DB;
+  background: #0195DD;
   color: #D7ECFE;
 }
 
@@ -370,11 +393,83 @@ a {
   color: #FFF !important;
 }
 
+.phone-label-secured:before {
+    color: #B5B1A6;
+    content:"\f023";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 2px;
+    left: 25px;
+    font-size: 18px;
+}
+
+.top-red:before {
+  top: 24px !important;
+}
+
+.phone-label-top:before {
+  top: 23px;
+}
+
+.phone-label-warning:before {
+  color: #C83933;
+  content: "\f071";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 2px;
+  left: 25px;
+  font-size: 18px;
+}
+
+.phone-label-secured {
+  position: relative;
+}
+
+.phone-label-warning {
+  position: relative;
+}
+
 @media screen
 and (min-width : 320px)
 and (max-width : 480px) {
+
+  .branding {
+    float: left;
+    width: 100%;
+  }
+  .branding-bottom {
+    width: 40%;
+    float: left;
+  }
+  .disclaimer {
+    width: 100%;
+    float: none;
+  }
+  input {
+    font-size: 14px;
+    font-weight: 200;
+    padding: 8px 0px;
+  }
+  .call-script-message {
+    font-size: 35px;
+  }
+  .line-break {
+    padding-top: 5px;
+    display: block;
+  }
+  .spinner-call {
+    display: block;
+  }
+  .calling-status p {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+  .enter-number {
+    font-size: 14px;
+  }
   .page-1-wrapper {
-    max-width: 215px;
+    max-width: 280px;
   }
   .every-call-count-container {
     float: none;
@@ -439,8 +534,13 @@ and (max-width : 480px) {
     float: none;
   }
   .page-1 .phone-input-container div .fa-mobile {
-    font-size: 25px;
+    font-size: 22px;
+    margin-right: 10px;
     margin-top: 15px;
+  }
+  .phone-input-container {
+    max-width: 270px;
+    padding: 0;
   }
   .page-1 .phone-input-container div {
     font-size: 12px;
@@ -461,6 +561,29 @@ and (max-width : 480px) {
 .tips-heading {
   text-align: center;
   padding: 0;
+}
+
+@media screen
+and (min-width : 480px)
+and (max-width : 940px) {
+  .call-script {
+    float: none;
+    width: 50%;
+    margin: 0 auto 30 auto;
+  }
+  .page-2-wrapper .ready-to-call {
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .page-2-wrapper .call-now-button-container {
+    margin: 0 auto;
+  }
+  .page-2-wrapper .calling-tips-container {
+    margin: 0 auto;
+    width: 50%;
+    float: none;
+  }
 }
 
 @media screen

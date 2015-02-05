@@ -79,7 +79,7 @@ function processPhone() {
 
 
 function makeCall(value) {
-  var url = "https://callcongress.mofostaging.net/create?campaignId=fcc-blanket&userPhone=";
+  var url = "https://callcongress.mofoprod.net/create?campaignId=fcc-blanket&userPhone=";
   var oReq = new XMLHttpRequest();
   oReq.onload = reqListener;
   oReq.open("post", url + value, true);
@@ -93,16 +93,18 @@ function reqListener (e) {
   spinner.classList.add("hidden");
   if (data.message !== "queued") {
     if(boolButton1) {
+      $(".phone-label-secured").removeClass('phone-label-secured').addClass('phone-label-warning');
       callNumber.classList.add("invalid");
       callNumberError.classList.add("show");
     } else {
+      $(".phone-label-secured").removeClass('phone-label-secured').addClass('phone-label-warning');
+      $(".phone-label-top").addClass('top-red');
       callNumber2.classList.add("invalid");
-      callNumberError2.classList.add("show");
       callNumberError2.classList.remove("hidden");
     }
     return;
   }
-
+  $('.call-script').removeClass("light").addClass("blue");
   page2Wrapper.classList.remove("hidden");
   callScript.classList.add("blue-script-bg");
   hl1.classList.add("blue-text-bg");
@@ -119,6 +121,7 @@ function reqListener (e) {
   var openCallscript = document.querySelector(".call-script-link a");
   openCallscript.addEventListener("click", function() {
 
+    $(".call-script").removeClass('blue').addClass('light');
     contentContainer.classList.remove("page-1");
     readyScript.classList.remove("hidden");
     page2Wrapper.classList.remove("hidden");
