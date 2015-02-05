@@ -8,14 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
   var boolButton1 = false;
   var boolButton2 = false;
 
-  // screen size:
-  var w = window,
-    d = document,
-    e = d.documentElement,
-    g = d.getElementsByTagName('body')[0],
-    x = w.innerWidth || e.clientWidth || g.clientWidth,
-    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-
   if (daysLeft === 0) {
     // do something on last day?
   }
@@ -52,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function() {
     boolButton2 = true;
     callButton2.classList.add("waiting");
     spinner.classList.remove("hidden");
-    alert('click')
     makeCall();
   });
 
@@ -78,14 +69,6 @@ function reqListener (e) {
       callNumber2.classList.add("invalid");
       callNumberError2.classList.add("show");
       callNumberError2.classList.remove("hidden");
-    }
-
-    if(x < 520) {
-      callWrapper.style.height = "450px";
-      readyScript.style.height = "385px";
-    } else {
-      callWrapper.style.height = "315px";
-      readyScript.style.height = "385px";
     }
     return;
   }
