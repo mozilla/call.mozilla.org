@@ -173,7 +173,7 @@ body {
 .page-call-script .highlight {
   background: #DFF0FA;
   color: #9EA3A6;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 .page-calling .highlight {
   background: #0475BB;
@@ -347,6 +347,23 @@ a {
 }
 .page-1-wrapper a {
   font-weight: bold;
+}
+
+.blue-script-bg {
+  background: #5293DB;
+  color: #D7ECFE;
+}
+
+.spinner-call {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.blue-text-bg {
+  background: #437BC7;
+  color: #D7ECFE;
+  padding: 0 10px;
+
 }
 
 @media screen

@@ -5,6 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
   var nowDay = new Date();
   var daysLeft = Math.ceil((finalDay - nowDay)/(1000*60*60*24));
   var readyScript = document.querySelector(".ready-to-call");
+  var callScript = document.querySelector(".call-script");
+  var hl1 = document.querySelector(".hl1");
+  var hl2 = document.querySelector(".hl1");
+  var page1Div = document.querySelector(".page-1-wrapper");
+  var page2Wrapper = document.querySelector(".page-2-wrapper");
   var boolButton1 = false;
   var boolButton2 = false;
 
@@ -61,25 +66,30 @@ function reqListener (e) {
   callButton.classList.remove("waiting");
   callButton2.classList.remove("waiting");
   spinner.classList.add("hidden");
-  if (data.message !== "queued") {
-    if(boolButton1) {
-      callNumber.classList.add("invalid");
-      callNumberError.classList.add("show");
-    } else {
-      callNumber2.classList.add("invalid");
-      callNumberError2.classList.add("show");
-      callNumberError2.classList.remove("hidden");
-    }
-    return;
-  }
+  // if (data.message !== "queued") {
+  //   if(boolButton1) {
+  //     callNumber.classList.add("invalid");
+  //     callNumberError.classList.add("show");
+  //   } else {
+  //     callNumber2.classList.add("invalid");
+  //     callNumberError2.classList.add("show");
+  //     callNumberError2.classList.remove("hidden");
+  //   }
+  //   return;
+  // }
 
+  page2Wrapper.classList.remove("hidden");
+  callScript.classList.add("blue-script-bg");
+  hl1.classList.add("blue-text-bg");
+  hl2.classList.add("blue-text-bg");
+  spinner.classList.remove("hidden");
+  contentContainer.removeChild(page1Div)
   contentContainer.classList.remove("page-1");
   contentContainer.classList.remove("page-call-script");
   contentContainer.classList.add("page-calling");
 }
 
   var openCallscript = document.querySelector(".call-script-link a");
-  var page2Wrapper = document.querySelector(".page-2-wrapper");
   openCallscript.addEventListener("click", function() {
 
     contentContainer.classList.remove("page-1");
