@@ -56,7 +56,7 @@ button{color:#FFF;border:none;padding:10px 0;background:#318DD0;background:linea
 a{color:#27AAE1;text-decoration:none}
 .count-down{color:#fff;position:relative;width:190px;height:90px;padding:0;margin:35px auto 45px;display:none}
 .count-down-text{position:absolute;left:0;bottom:0;width:100%;font-size:29px;font-weight:300;padding:0;text-shadow:rgba(0,0,0,.4) 0 1px}
-.phone-input-container div .fa-mobile{font-size:35px;margin:0 15px;vertical-align:bottom}
+.phone-input-container div .fa-mobile{font-size:34px;margin:0 15px 0 0;vertical-align:middle}
 .days-left{font-size:70px;font-weight:700;letter-spacing:-2px}
 .count-down-top{background:#BF3832;position:absolute;height:50%;width:100%;left:0;top:0;border-radius:5px}
 .count-down-bottom{background:#CC413C;position:absolute;height:50%;width:100%;left:0;top:50%;border-radius:5px}
