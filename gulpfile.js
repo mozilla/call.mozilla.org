@@ -12,6 +12,8 @@ gulp.task('minify-css', function() {
 gulp.task('watch', ['minify-css'], function() {
   gulp.watch([
     './*.css',
+    './*.html',
+    './*.js',
   ], ['minify-css']);
 });
 
@@ -20,7 +22,6 @@ gulp.task('default', ['minify-css']);
 gulp.task('dev', ['watch'], function() {
   gulp.src('.').pipe(webserver({
     livereload: true,
-    open: true,
     fallback: 'index.html'
   }));
 });
