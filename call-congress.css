@@ -370,6 +370,21 @@ a {
   top: 50%;
   border-radius: 5px;
 }
+
+/* Floating Shadow Pseudoelement */
+.count-down-bottom:after {
+  content:'';
+  display: block;
+  position: absolute;
+  left: -8%;
+  bottom: 15px;
+  width: 116%;
+  height: 5px;
+  background: transparent;
+  border-radius: 100px/50px;
+  box-shadow: 0 20px 10px rgba(0,0,0,0.2);
+}
+
 .call-script-container {
   margin-left: auto;
   margin-right: auto;
@@ -758,3 +773,5 @@ and (max-width : 780px) {
       transform:rotate(360deg);
   }
 }
+
+
