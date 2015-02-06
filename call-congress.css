@@ -25,7 +25,7 @@ body {
 }
 
 .page-2-wrapper .ready-to-call input {
-  max-width: 230px;
+  max-width: 250px;
   height: 50px;
 }
 
@@ -294,7 +294,7 @@ button {
   max-width: 253px;
 }
 .call-now-button-container {
-  max-width: 253px;
+  max-width: 290px;
   margin: auto;
   padding: 0;
 }
