@@ -179,10 +179,16 @@ body {
   font-weight: bold;
 }
 .message,
+.tips-heading {
+  text-align: center;
+}
+.message,
 .call-script-message,
 .tips-heading {
   font-size: 40px;
   font-weight: 100;
+}
+.call-script-message {
   text-align: left;
   padding-left: 75px;
 }
