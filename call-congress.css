@@ -83,6 +83,7 @@ body {
 }
 .page-calling .call-script {
   background: #0195DD;
+  color: #D7ECFE;
 }
 
 .page-calling .call-script:before {
@@ -383,11 +384,6 @@ a {
 }
 .page-1-wrapper a {
   font-weight: bold;
-}
-
-.blue-script-bg {
-  background: #0195DD;
-  color: #D7ECFE;
 }
 
 .spinner-call {
