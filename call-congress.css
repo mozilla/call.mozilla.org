@@ -227,7 +227,6 @@ body, button {
 .page-1 .call-now-button {
   height: 70px;
   max-width: 290px !important;
-  margin-left: -20px;
   width: 290px;
 }
 
@@ -676,9 +675,6 @@ and (max-width : 780px) {
     margin-top: 0;
     width: 50%;
     float: left;
-  }
-  .call-now-button-container {
-    margin-right: -10px;
   }
   .page-1 .phone-input-container div .fa-mobile {
     font-size: 25px;
