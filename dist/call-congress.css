@@ -15,7 +15,7 @@ body{margin:0;text-align:center;color:#565656;font-family:"Open Sans","Helvetica
 .blue:before{content:url(../img-bubble-corner-blue.svg);display:block;position:absolute;width:37px;height:35px;top:-30px;left:12px}
 .light:before{content:url(../img-bubble-corner-light.svg);display:block;position:absolute;width:37px;height:35px;top:-30px;left:12px}
 .sub-ready{padding:10px 35px!important}
-.content-container{background:#EDEAE3;background:linear-gradient(to bottom,#D7D3C8,#F6F4EC);padding:18px 18px 0}
+.content-container{padding:18px 18px 0}
 .call-number.invalid{border:3px solid #BD372E}
 .invalid{border:2px solid #BD372E}
 .phone-error.show{display:block}
@@ -70,7 +70,7 @@ a{color:#27AAE1;text-decoration:none}
 .phone-label-warning:before{color:#C83933;content:"\f071";font-family:FontAwesome;position:absolute;top:2px;left:25px;font-size:18px}
 .phone-label-secured,.phone-label-warning{position:relative}
 .highlight{display:inline-block;border-radius:13px;padding:0 5 3px 7;margin-right:3px}
-@media screen and (min-width :320px) and (max-width :480px){.tips-heading{font-size:30px;margin:30px 0 15px}
+@media screen and (max-width :480px){.tips-heading{font-size:30px;margin:30px 0 15px}
 .calling-tip{padding:14px;font-size:14px}
 .branding{float:left;width:100%}
 .call-script p{font-size:15px;font-weight:200}
@@ -124,7 +124,7 @@ div.every-call-counts{font-size:25px;padding-bottom:10px;margin-bottom:5px}
 .page-1 .phone-input-container div{font-size:12px}
 .phone-error{font-size:12px;max-width:200px}}
 .center-block{display:block;margin:0 auto}
-.main-container{margin:auto;max-width:100%}
+.main-container{background:#EDEAE3;background:linear-gradient(to bottom,#D7D3C8,#F6F4EC)}
 .call-script-container,.call-script-link,.calling-status,.calling-tips,.calling-tips-container,.every-call-count-container,.message,.page-calling .content,.page-calling .ready-to-call{display:none}
 .page-1 .call-script-link,.page-1 .count-down,.page-1 .every-call-count-container,.page-1 .message,.page-call-script .call-script-container,.page-calling .call-script-container,.page-calling .calling-status,.page-calling .calling-tips,.page-calling .calling-tips-container{display:block}
 .call-now-button.waiting .fa-spinner{display:inline-block}
