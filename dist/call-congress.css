@@ -58,7 +58,7 @@ a{color:#27AAE1;text-decoration:none}
 .days-left{font-size:65px;font-weight:700}
 .count-down-top{background:#BF3832;position:absolute;height:50%;width:100%;left:0;top:0;border-radius:3px}
 .count-down-bottom{background:#CC413C;position:absolute;height:50%;width:100%;left:0;top:50%;border-radius:3px}
-.call-script-container{margin-left:auto;margin-right:auto;padding:0}
+.call-script-container{margin-left:auto;margin-right:auto;padding:0;max-width:1030px}
 .page-1 .phone-container{padding:0;width:50%;float:left}
 .page-1-wrapper{background:#FFF;max-width:690px;padding:20px 35px;overflow:hidden}
 .page-1-wrapper a{font-weight:700}

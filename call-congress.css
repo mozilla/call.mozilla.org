@@ -362,9 +362,8 @@ a {
 .call-script-container {
   margin-left: auto;
   margin-right: auto;
-}
-.call-script-container {
   padding: 0;
+  max-width: 1030px;
 }
 .page-1 .phone-container {
   padding: 0;
