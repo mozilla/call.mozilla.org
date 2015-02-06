@@ -26,7 +26,7 @@ body,button{margin:0;text-align:center;color:#565656;font-family:"Open Sans","He
 .phone-error{display:none;background:#FFF2F2;color:#BD372E;border-radius:12px;padding:14px;font-size:14px;max-width:253px;margin:0 auto 18px}
 .phone-error-2 span{font-weight:700}
 .branding-top{text-align:left;font-family:"Fira Sans";font-size:37px;margin-left:70px;margin-top:-5px;margin-bottom:-40px;height:95px}
-.branding-bottom{text-align:left;font-family:"Fira Sans";font-size:26px}
+.branding-bottom{text-align:left;font-family:"Fira Sans";font-size:26px;padding-bottom:20px}
 .calling-tips-container{border-bottom:1px solid #DBD8D8;padding:0;margin:0 auto 18px;max-width:400px;float:left}
 .calling-tip{text-align:left;background:#ECE9E0;border-top:1px solid #DBD8D8;padding:20px;font-size:16px}
 .calling-tip span{font-weight:700}
@@ -46,7 +46,7 @@ body,button{margin:0;text-align:center;color:#565656;font-family:"Open Sans","He
 .footer-container{padding:0;margin:auto;max-width:775px}
 .branding{width:20%;float:left}
 .disclaimer{font-size:12px;width:80%;float:left}
-.footer{background:#FFF;padding:16px;text-align:left;color:#BBB;box-sizing:border-box}
+.footer{background:#FFF;padding:43px 16px 16px;text-align:left;color:#BBB;box-sizing:border-box}
 button,input{margin-bottom:18px;width:100%;text-align:center;border-radius:5px}
 input{font-size:16px;font-weight:200;padding:15px 60px;border:1px solid #D0D0D0;box-shadow:inset 0 5px 4px -4px #E3E3E3;background:#FAFAFA;text-align:left}
 button{color:#FFF;border:none;padding:10px 0;background:#318DD0;background:linear-gradient(to bottom,#43A5E2,#1E6EB7);cursor:pointer;box-shadow:0 2px 2px #999;font-size:22px;font-weight:lighter;max-width:253px}
@@ -75,7 +75,8 @@ a{color:#27AAE1;text-decoration:none}
 .page-1 .message{font-size:50px}
 .phone-label-warning{position:relative}
 .highlight{display:inline-block;border-radius:13px;padding:0 5 3px 7;margin-right:3px}
-@media screen and (max-width :480px){.tips-heading{font-size:30px;margin:30px 0 15px}
+@media screen and (max-width :480px){.footer{padding:25px 16px 16px}
+.tips-heading{font-size:30px;margin:30px 0 15px}
 .calling-tip{padding:14px;font-size:14px}
 .branding{float:left;width:100%}
 .call-script p{font-size:15px;font-weight:200}
