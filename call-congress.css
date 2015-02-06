@@ -168,6 +168,7 @@ body {
   text-align: left;
   font-family: "Fira Sans";
   font-size: 26px;
+  padding-bottom: 20px;
 }
 .calling-tips-container {
   border-bottom: 1px solid #DBD8D8;
@@ -267,7 +268,7 @@ body {
 }
 .footer {
   background: #FFFFFF;
-  padding: 16px;
+  padding: 43px 16px 16px 16px;
   text-align: left;
   color: #BBBBBB;
   box-sizing: border-box;
@@ -449,6 +450,9 @@ a {
 
 @media screen
 and (max-width : 480px) {
+  .footer {
+    padding: 25px 16px 16px;
+  }
   .tips-heading {
     font-size: 30px;
     margin: 30px 0 15px 0;
