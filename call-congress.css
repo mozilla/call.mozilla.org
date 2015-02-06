@@ -343,9 +343,9 @@ a {
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px;
 }
 .phone-input-container div .fa-mobile {
-  font-size: 35px;
-  margin: 0px 15px;
-  vertical-align: bottom;
+  font-size: 34px;
+  margin: 0px 15px 0 0;
+  vertical-align: middle;
 }
 .days-left {
   font-size: 70px;
