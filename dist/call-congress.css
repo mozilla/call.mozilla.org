@@ -71,7 +71,9 @@ a{color:#27AAE1;text-decoration:none}
 .top-red:before{top:24px!important}
 .phone-label-top:before{top:23px}
 .phone-label-warning:before{color:#C83933;content:"\f071";font-family:FontAwesome;position:absolute;top:2px;left:25px;font-size:18px}
-.phone-label-secured,.phone-label-warning{position:relative}
+.phone-label-secured{position:relative}
+.page-1 .message{font-size:50px}
+.phone-label-warning{position:relative}
 .highlight{display:inline-block;border-radius:13px;padding:0 5 3px 7;margin-right:3px}
 @media screen and (max-width :480px){.tips-heading{font-size:30px;margin:30px 0 15px}
 .calling-tip{padding:14px;font-size:14px}

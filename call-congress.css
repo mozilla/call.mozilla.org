@@ -437,6 +437,10 @@ a {
   position: relative;
 }
 
+.page-1 .message {
+  font-size: 50px;
+}
+
 .phone-label-warning {
   position: relative;
 }
