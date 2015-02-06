@@ -223,6 +223,7 @@ body, button {
   margin-top: 32px;
   width: 50%;
   float: left;
+  margin-bottom: 15px;
 }
 .page-1 .call-now-button {
   height: 70px;
@@ -344,7 +345,7 @@ a {
 }
 .phone-input-container div .fa-mobile {
   font-size: 34px;
-  margin: 0px 15px 0 0;
+  margin-right: 15px;
   vertical-align: middle;
 }
 .days-left {
@@ -408,13 +409,13 @@ a {
 }
 
 .phone-label-secured:before {
-    color: #B5B1A6;
-    content:"\f023";
-    font-family: FontAwesome;
-    position: absolute;
-    top: 2px;
-    left: 13px;
-    font-size: 18px;
+  color: #B5B1A6;
+  content:"\f023";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 2px;
+  left: 13px;
+  font-size: 18px;
 }
 
 .top-red:before {
@@ -576,14 +577,10 @@ and (max-width : 480px) {
   .page-1 .phone-input-container div .fa-mobile {
     font-size: 22px;
     margin-right: 10px;
-    margin-top: 15px;
   }
   .phone-input-container {
     max-width: 270px;
     padding: 0;
-  }
-  .page-1 .phone-input-container div {
-    font-size: 12px;
   }
   .phone-error {
     font-size: 13px;
@@ -682,10 +679,6 @@ and (max-width : 780px) {
   }
   .page-1 .phone-input-container div .fa-mobile {
     font-size: 25px;
-    margin-top: 15px;
-  }
-  .page-1 .phone-input-container div {
-    font-size: 12px;
   }
   .phone-error {
     font-size: 12px;
