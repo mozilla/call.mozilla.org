@@ -67,7 +67,6 @@ body {
 
 .call-script {
   color: #FFF;
-  background: none repeat scroll 0% 0% #F2FAFD;
   padding: 27px 20px 20px 25px;
   border-radius: 15px;
   text-align: left;
@@ -78,7 +77,15 @@ body {
   position: relative;
 }
 
-.blue:before {
+
+.page-call-script .call-script {
+  background: #F2FAFD;
+}
+.page-calling .call-script {
+  background: #0195DD;
+}
+
+.page-calling .call-script:before {
   content: url('../img-bubble-corner-blue.svg');
   display: block;
   position: absolute;
@@ -88,7 +95,7 @@ body {
   top: -30px;
   left: 12px;
 }
-.light:before {
+.page-call-script .call-script:before {
   content: url('../img-bubble-corner-light.svg');
   display: block;
   position: absolute;
