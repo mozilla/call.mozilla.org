@@ -329,7 +329,7 @@ a {
   width: 190px;
   height: 90px;
   padding: 0;
-  margin: 18px auto 49px;
+  margin: 35px auto 45px;
   display: none;
 }
 .count-down-text {
@@ -348,8 +348,9 @@ a {
   vertical-align: bottom;
 }
 .days-left {
-  font-size: 65px;
+  font-size: 70px;
   font-weight: bold;
+  letter-spacing: -2px;
 }
 .count-down-top {
   background: #BF3832;
@@ -358,7 +359,7 @@ a {
   width: 100%;
   left: 0;
   top: 0;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 .count-down-bottom {
   background: #CC413C;
@@ -367,7 +368,7 @@ a {
   width: 100%;
   left: 0;
   top: 50%;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 .call-script-container {
   margin-left: auto;
