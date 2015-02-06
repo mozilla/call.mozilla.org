@@ -85,9 +85,7 @@ function reqListener (e) {
     }
     return;
   }
-  $('.call-script').removeClass("light").addClass("blue");
   page2Wrapper.classList.remove("hidden");
-  callScript.classList.add("blue-script-bg");
   hl1.classList.add("blue-text-bg");
   hl2.classList.add("blue-text-bg");
   callScriptHeader.classList.add("white-text")
