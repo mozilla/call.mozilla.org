@@ -67,7 +67,7 @@ a{color:#27AAE1;text-decoration:none}
 .spinner-call{font-size:24px;margin-right:10px}
 .blue-text-bg{background:#437BC7;color:#D7ECFE;padding:0 10px}
 .white-text{color:#FFF!important}
-.phone-label-secured:before{color:#B5B1A6;content:"\f023";font-family:FontAwesome;position:absolute;top:2px;left:25px;font-size:18px}
+.phone-label-secured:before{color:#B5B1A6;content:"\f023";font-family:FontAwesome;position:absolute;top:2px;left:13px;font-size:18px}
 .top-red:before{top:24px!important}
 .phone-label-top:before{top:23px}
 .phone-label-warning:before{color:#C83933;content:"\f071";font-family:FontAwesome;position:absolute;top:2px;left:25px;font-size:18px}
@@ -82,7 +82,7 @@ a{color:#27AAE1;text-decoration:none}
 .call-script p{font-size:15px;font-weight:200}
 .branding-bottom{width:40%;float:left}
 .disclaimer{width:100%;float:none}
-input{font-size:14px;font-weight:200;padding:8px 70px;text-align:left}
+input{font-size:12px;font-weight:200;padding:8px 0 8px 60px;text-align:left;max-width:210px}
 .call-script-message{font-size:35px}
 .line-break{padding-top:5px;display:block}
 .spinner-call{display:block}
@@ -114,7 +114,8 @@ div.every-call-counts{font-size:25px;padding-bottom:10px;margin-bottom:5px}
 .page-2-wrapper .ready-to-call{float:none;width:50%;margin:0 auto}
 .page-2-wrapper .call-now-button-container{margin:0 auto}
 .page-2-wrapper .calling-tips-container{margin:0 auto;width:50%;float:none}}
-@media screen and (min-width :490px) and (max-width :780px){.page-1-wrapper{height:220px;max-width:500px}
+@media screen and (min-width :490px) and (max-width :780px){input{max-width:225px;padding:10px 1px 10px 60px;font-size:14px}
+.page-1-wrapper{height:220px;max-width:500px}
 .page-1-wrapper .call-now-button{width:240px;height:50px;margin:0 auto}
 .call-script-link{padding-top:15px}
 .page-1 .message{font-size:35px}
