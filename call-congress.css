@@ -4,7 +4,7 @@
 html, body {
   height: 100%;
 }
-body {
+body, button {
   margin: 0;
   text-align: center;
   color: #565656;
@@ -299,6 +299,7 @@ button {
   cursor: pointer;
   box-shadow: 0px 2px 2px #999999;
   font-size: 22px;
+  font-weight: lighter;
   max-width: 253px;
 }
 .call-now-button-container {
