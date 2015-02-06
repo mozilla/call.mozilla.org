@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function makeCall(value) {
-  var url = "https://callcongress.mofoprod.net/create?campaignId=fcc-blanket&userPhone=";
+  var url = "https://callcongress.mofoprod.net/create?campaignId=jan14th&userPhone=";
   var oReq = new XMLHttpRequest();
   oReq.onload = reqListener;
   oReq.open("post", url + value, true);
