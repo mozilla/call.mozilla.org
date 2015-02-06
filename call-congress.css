@@ -179,10 +179,16 @@ body {
   font-weight: bold;
 }
 .message,
+.tips-heading {
+  text-align: center;
+}
+.message,
 .call-script-message,
 .tips-heading {
   font-size: 40px;
   font-weight: 100;
+}
+.call-script-message {
   text-align: left;
   padding-left: 75px;
 }
@@ -256,9 +262,7 @@ body {
   padding: 16px;
   text-align: left;
   color: #BBBBBB;
-  margin-right: -3px;
-  margin-left: -3px;
-  width: 100%;
+  box-sizing: border-box;
 }
 button, input {
   margin-bottom: 18px;
@@ -358,9 +362,8 @@ a {
 .call-script-container {
   margin-left: auto;
   margin-right: auto;
-}
-.call-script-container {
   padding: 0;
+  max-width: 1030px;
 }
 .page-1 .phone-container {
   padding: 0;
