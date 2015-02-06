@@ -256,9 +256,7 @@ body {
   padding: 16px;
   text-align: left;
   color: #BBBBBB;
-  margin-right: -3px;
-  margin-left: -3px;
-  width: 100%;
+  box-sizing: border-box;
 }
 button, input {
   margin-bottom: 18px;
