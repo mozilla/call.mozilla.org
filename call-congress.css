@@ -410,7 +410,7 @@ a {
     font-family: FontAwesome;
     position: absolute;
     top: 2px;
-    left: 25px;
+    left: 13px;
     font-size: 18px;
 }
 
@@ -474,10 +474,11 @@ and (max-width : 480px) {
     float: none;
   }
   input {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 200;
-    padding: 8px 70px;
+    padding: 8px 0 8px 60px;
     text-align: left;
+    max-width: 210px;
   }
   .call-script-message {
     font-size: 35px;
@@ -618,6 +619,11 @@ and (max-width : 940px) {
 @media screen
 and (min-width : 490px)
 and (max-width : 780px) {
+  input {
+    max-width: 225px;
+    padding: 10px 1px 10px 60px;
+    font-size: 14px;
+  }
   .page-1-wrapper {
     height: 220px;
     max-width: 500px;
