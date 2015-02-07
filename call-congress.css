@@ -192,10 +192,18 @@ body, button {
   text-align: center;
 }
 .message,
+.call-script-message {
+  font-size: 45px;
+}
+.message,
 .call-script-message,
 .tips-heading {
-  font-size: 40px;
   font-weight: 100;
+}
+
+.tips-heading {
+  font-size: 30px;
+  padding-bottom: 20px;
 }
 .call-script-message {
   text-align: left;
@@ -478,7 +486,11 @@ a {
    display: inline-block;
    border-radius: 5px;
    padding: 0px 5 3px 7;
- }
+}
+
+.calling-status p {
+  padding-bottom: 25px;
+}
 
 @media screen
 and (max-width : 480px) {
@@ -489,7 +501,6 @@ and (max-width : 480px) {
     height: 50px;
   }
   .tips-heading {
-    font-size: 30px;
     margin: 30px 0 15px 0;
   }
   .calling-tip {
@@ -499,6 +510,9 @@ and (max-width : 480px) {
   .branding {
     float: left;
     width: 100%;
+  }
+  .branding-top {
+    margin-bottom: 30px;
   }
   .call-script p {
     font-size: 15px;
@@ -550,9 +564,6 @@ and (max-width : 480px) {
   }
   .page-1 .message {
     font-size: 35px;
-  }
-  .branding-top {
-    margin-left: 0;
   }
   .count-down {
     width: 145px;
@@ -618,7 +629,6 @@ and (max-width : 480px) {
 
 .tips-heading {
   text-align: center;
-  padding: 0;
 }
 
 @media screen
@@ -630,12 +640,13 @@ and (max-width : 1236px) {
     margin: 0 auto 30 auto;
   }
   .page-1 .message {
-    font-size: 48px;
+    font-size: 45px;
   }
   .page-2-wrapper,
   .message,
   .branding-top {
     max-width: 775px;
+    margin-bottom: 30px;
   }
   .page-2-wrapper .ready-to-call {
     float: none;
@@ -664,8 +675,7 @@ and (max-width : 780px) {
     height: 50px;
   }
   .page-1-wrapper {
-    height: 220px;
-    max-width: 500px;
+    max-width: 280px;
   }
   .page-1 .message {
     font-size: 35px;
@@ -693,10 +703,18 @@ and (max-width : 780px) {
   .every-call-count-container p {
     font-size: 14px;
   }
-  .page-1 div.every-call-count-container {
+  .page-1 div.every-call-count-container,
+  .page-1 .phone-container {
     margin-top: 0;
-    width: 50%;
-    float: left;
+    width: 100%;
+    float: none;
+  }
+  .enter-number {
+    font-size: 14px;
+  }
+  .page-1 .phone-input-container {
+    max-width: 270px;
+    padding: 0px;
   }
   .page-1 .phone-input-container div .fa-mobile {
     font-size: 25px;
