@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var callButton = document.querySelector(".call-now-button");
   callButton.addEventListener("click", function() {
+    analytics.event("submit", {label: "Submit a call on first page"});
     boolButton1 = true;
     boolButton2 = false;
     callButton.classList.add("waiting");
@@ -51,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var callButton2 = document.querySelector(".call-now-button-2");
   callButton2.addEventListener("click", function() {
+    analytics.event("submit", {label: "Submit a call on call script page"});
     boolButton1 = false;
     boolButton2 = true;
     callButton2.classList.add("waiting");
@@ -85,6 +87,7 @@ function reqListener (e) {
     }
     return;
   }
+  analytics.virtualPageview('calling-success-page');
   page2Wrapper.classList.remove("hidden");
   hl1.classList.add("blue-text-bg");
   hl2.classList.add("blue-text-bg");
@@ -99,6 +102,7 @@ function reqListener (e) {
 
   var openCallscript = document.querySelector(".call-script-link a");
   openCallscript.addEventListener("click", function() {
+    analytics.virtualPageview('preview-the-call-script');
     $(".phone-label-warning").removeClass("phone-label-warning").addClass("phone-label-secured")
     $(".call-script").removeClass('blue').addClass('light');
     contentContainer.classList.remove("page-1");
