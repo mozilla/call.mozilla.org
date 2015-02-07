@@ -15,8 +15,8 @@ body,button{margin:0;text-align:center;color:#565656;font-family:"Open Sans","He
 .call-script{color:#FFF;padding:27px 20px 20px 25px;border-radius:15px;text-align:left;margin-right:100px;float:left;max-width:675px;position:relative}
 .page-call-script .call-script{background:#F2FAFD}
 .page-calling .call-script{background:#0195DD;color:#D7ECFE}
-.page-calling .call-script:before{content:url(../img-bubble-corner-blue.svg);display:block;position:absolute;width:37px;height:35px;top:-30px;left:12px}
-.page-call-script .call-script:before{content:url(../img-bubble-corner-light.svg);display:block;position:absolute;width:37px;height:35px;top:-30px;left:12px}
+.page-calling .call-script:before{content:url(../img-bubble-corner-blue.svg);display:block;position:absolute;width:37px;height:35px;top:-30px;left:24px}
+.page-call-script .call-script:before{content:url(../img-bubble-corner-light.svg);display:block;position:absolute;width:37px;height:35px;top:-30px;left:24px}
 .sub-ready{padding:10px 35px!important}
 .content-container{padding:18px 18px 0}
 .call-number.invalid{border:3px solid #BD372E}
@@ -34,8 +34,8 @@ body,button{margin:0;text-align:center;color:#565656;font-family:"Open Sans","He
 .message,.tips-heading{text-align:center}
 .call-script-message,.message,.tips-heading{font-size:40px;font-weight:100}
 .call-script-message{text-align:left}
-.page-call-script .highlight{background:#DFF0FA;color:#9EA3A6;padding:0 10px}
-.page-calling .highlight{background:#0475BB;color:#acdbff}
+.page-call-script .highlight{background:#DFF0FA;color:#9EA3A6;padding:0 5px 5px;line-height:1.2;margin-right:5px}
+.page-calling .highlight{background:#0475BB;color:#acdbff;padding:0 5px 5px;line-height:1.2;margin-right:5px}
 .blue-highlight,.calling-status{color:#0195DD}
 .number{vertical-align:super;font-size:12px}
 .page-1 div.every-call-count-container{margin-top:32px;width:50%;float:left;margin-bottom:15px;padding:0 20px 0 35px;box-sizing:border-box}
@@ -77,7 +77,7 @@ a{color:#27AAE1;text-decoration:none}
 .phone-label-secured{position:relative}
 .page-1 .message{font-size:50px}
 .phone-label-warning{position:relative}
-.highlight{display:inline-block;border-radius:13px;padding:0 5 3px 7;margin-right:3px}
+.highlight{display:inline-block;border-radius:5px;padding:0 5 3px 7}
 @media screen and (max-width :480px){.footer{padding:25px 16px 16px}
 .page-1 .call-now-button{height:50px}
 .tips-heading{font-size:30px;margin:30px 0 15px}
