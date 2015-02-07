@@ -32,7 +32,9 @@ body,button{margin:0;text-align:center;color:#565656;font-family:"Open Sans","He
 .calling-tip{text-align:left;background:#ECE9E0;border-top:1px solid #DBD8D8;padding:20px;font-size:16px}
 .calling-tip span{font-weight:700}
 .message,.tips-heading{text-align:center}
-.call-script-message,.message,.tips-heading{font-size:40px;font-weight:100}
+.call-script-message,.message{font-size:45px}
+.call-script-message,.message,.tips-heading{font-weight:100}
+.tips-heading{font-size:30px;padding-bottom:20px}
 .call-script-message{text-align:left}
 .page-call-script .highlight{background:#DFF0FA;color:#9EA3A6;padding:0 5px 5px;line-height:1.2;margin-right:5px}
 .page-calling .highlight{background:#0475BB;color:#acdbff;padding:0 5px 5px;line-height:1.2;margin-right:5px}
@@ -78,11 +80,13 @@ a{color:#27AAE1;text-decoration:none}
 .page-1 .message{font-size:50px;max-width:1200;margin:0 auto}
 .phone-label-warning{position:relative}
 .highlight{display:inline-block;border-radius:5px;padding:0 5 3px 7}
+.calling-status p{padding-bottom:25px}
 @media screen and (max-width :480px){.footer{padding:25px 16px 16px}
 .page-1 .call-now-button{height:50px}
-.tips-heading{font-size:30px;margin:30px 0 15px}
+.tips-heading{margin:30px 0 15px}
 .calling-tip{padding:14px;font-size:14px}
 .branding{float:left;width:100%}
+.branding-top{margin-bottom:30px}
 .call-script p{font-size:15px;font-weight:200}
 .branding-bottom{width:40%;float:left}
 .disclaimer{width:100%;float:none}
@@ -95,7 +99,6 @@ input{font-size:12px;font-weight:200;padding:8px 0 8px 60px;text-align:left;max-
 .page-1-wrapper{max-width:280px}
 .every-call-count-container,.page-1-wrapper .phone-container{float:none;width:100%}
 .page-1 .message{font-size:35px}
-.branding-top{margin-left:0}
 .count-down{width:145px;height:70px}
 .call-script{float:none;width:100%;max-width:280px;margin:0 auto;box-sizing:border-box}
 .page-2-wrapper .ready-to-call{float:none;width:100%;max-width:320px;margin:45px auto auto}
@@ -110,16 +113,16 @@ div.every-call-counts{font-size:25px;padding-bottom:10px;margin-bottom:5px}
 .phone-error{font-size:13px}
 .call-script-message,.message,.tips-heading{padding-left:0}}
 .call-script-message{text-alight:left}
-.tips-heading{text-align:center;padding:0}
+.tips-heading{text-align:center}
 @media screen and (min-width :480px) and (max-width :1236px){.call-script{float:none;width:50%;margin:0 auto 30}
-.page-1 .message{font-size:48px}
-.branding-top,.message,.page-2-wrapper{max-width:775px}
+.page-1 .message{font-size:45px}
+.branding-top,.message,.page-2-wrapper{max-width:775px;margin-bottom:30px}
 .page-2-wrapper .ready-to-call{float:none;width:50%;margin:0 auto}
 .page-2-wrapper .call-now-button-container{margin:0 auto}
 .page-2-wrapper .calling-tips-container{margin:0 auto;width:50%;float:none}}
 @media screen and (min-width :480px) and (max-width :780px){input{max-width:225px;padding:10px 1px 10px 60px;font-size:14px}
 .page-1 .call-now-button{height:50px}
-.page-1-wrapper{height:220px;max-width:500px}
+.page-1-wrapper{max-width:280px}
 .page-1 .message{font-size:35px}
 .branding-top{margin-left:0}
 .count-down{width:145px;height:70px}
@@ -127,7 +130,9 @@ div.every-call-counts{font-size:25px;padding-bottom:10px;margin-bottom:5px}
 .count-down-text{font-size:20px;font-weight:lighter;padding:5px 0}
 div.every-call-counts{font-size:25px;padding-bottom:10px;margin-bottom:5px}
 .every-call-count-container p{font-size:14px}
-.page-1 div.every-call-count-container{margin-top:0;width:50%;float:left}
+.page-1 .phone-container,.page-1 div.every-call-count-container{margin-top:0;width:100%;float:none}
+.enter-number{font-size:14px}
+.page-1 .phone-input-container{max-width:270px;padding:0}
 .page-1 .phone-input-container div .fa-mobile{font-size:25px}
 .phone-error{font-size:12px;max-width:200px}}
 .center-block{display:block;margin:0 auto}
