@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 html, body {
   height: 100%;
@@ -237,7 +238,6 @@ body, button {
   float: left;
   margin-bottom: 15px;
   padding: 0px 20px 0px 35px;
-  box-sizing: border-box;
 }
 .page-1 .call-now-button {
   height: 70px;
@@ -285,7 +285,6 @@ body, button {
   padding: 43px 16px 16px 16px;
   text-align: left;
   color: #BBBBBB;
-  box-sizing: border-box;
 }
 button, input {
   margin-bottom: 18px;
@@ -297,7 +296,7 @@ button, input {
 input {
   font-size: 16px;
   font-weight: 200;
-  padding: 15px 60px;
+  padding: 10px 0 10px 50px;
   border: solid 1px #D0D0D0;
   box-shadow: inset 0 5px 4px -4px #E3E3E3;
   background: #FAFAFA;
@@ -322,8 +321,8 @@ button {
   padding: 0;
 }
 .phone-input-container {
-  padding: 0 18px;
-  max-width: 253px;
+  padding: 0 30px;
+  max-width: 290px;
   margin: auto;
   position: relative;
 }
@@ -357,7 +356,7 @@ a {
 }
 .phone-input-container div .fa-mobile {
   font-size: 34px;
-  margin-right: 15px;
+  margin-right: 12px;
   vertical-align: middle;
 }
 .days-left {
@@ -408,7 +407,6 @@ a {
   width: 50%;
   float: left;
   padding: 0 30px;
-  box-sizing: border-box;
 }
 
 .page-1-wrapper {
@@ -416,7 +414,6 @@ a {
   max-width: 700px;
   padding: 20px 0;
   overflow: hidden;
-  box-sizing: border-box;
 }
 .page-1-wrapper a {
   font-weight: bold;
@@ -529,7 +526,7 @@ and (max-width : 480px) {
   input {
     font-size: 12px;
     font-weight: 200;
-    padding: 8px 0 8px 60px;
+    padding: 8px 0 8px 54px;
     text-align: left;
     max-width: 210px;
   }
@@ -569,17 +566,17 @@ and (max-width : 480px) {
     width: 145px;
     height: 70px;
   }
+  .page-2-wrapper .calling-tips-container,
   .call-script {
     float: none;
     width: 100%;
     max-width: 280px;
     margin: 0 auto;
-    box-sizing: border-box;
   }
   .page-2-wrapper .ready-to-call {
     float: none;
     width: 100%;
-    max-width: 320px;
+    max-width: 280px;
     margin: 45px auto auto auto;
   }
   .call-script-heading {
@@ -607,8 +604,9 @@ and (max-width : 480px) {
     float: none;
   }
   .page-1 .phone-input-container div .fa-mobile {
-    font-size: 22px;
-    margin-right: 10px;
+    font-size: 20px;
+    margin-right: 8px;
+    vertical-align: top;
   }
   .phone-input-container {
     max-width: 270px;
@@ -635,9 +633,17 @@ and (max-width : 480px) {
 and (min-width : 480px)
 and (max-width : 1236px) {
   .call-script {
-    float: none;
-    width: 50%;
-    margin: 0 auto 30 auto;
+    float: left;
+    width: 100%;
+    max-width: 335px;
+    margin: 0px 48px 30px 0px;
+  }
+  .page-2-wrapper .ready-to-call,
+  .page-2-wrapper .calling-tips-container {
+    float: left;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
   }
   .page-1 .message {
     font-size: 45px;
@@ -648,27 +654,29 @@ and (max-width : 1236px) {
     max-width: 775px;
     margin-bottom: 30px;
   }
-  .page-2-wrapper .ready-to-call {
-    float: none;
-    width: 50%;
-    margin: 0 auto;
-  }
   .page-2-wrapper .call-now-button-container {
     margin: 0 auto;
-  }
-  .page-2-wrapper .calling-tips-container {
-    margin: 0 auto;
-    width: 50%;
-    float: none;
   }
 }
 
 @media screen
 and (min-width : 480px)
 and (max-width : 780px) {
+  .call-script {
+    float: none;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto 30 auto;
+  }
+  .page-2-wrapper .ready-to-call,
+  .page-2-wrapper .calling-tips-container {
+    float: none;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+  }
   input {
     max-width: 225px;
-    padding: 10px 1px 10px 60px;
     font-size: 14px;
   }
   .page-1 .call-now-button {
