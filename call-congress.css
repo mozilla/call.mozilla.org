@@ -159,10 +159,8 @@ body, button {
   text-align: left;
   font-family: "Fira Sans";
   font-size: 37px;
-  margin-left: 70px;
-  margin-top: -5px;
-  margin-bottom: -40px;
-  height: 95px;
+  max-width: 1200px;
+  margin: auto;
 }
 .branding-bottom {
   text-align: left;
