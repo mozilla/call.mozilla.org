@@ -10,8 +10,9 @@ body,button{margin:0;text-align:center;color:#565656;font-family:"Open Sans","He
 .call-script div{color:#565656;display:inline-block;margin-bottom:0}
 .call-script-heading{font-size:33px;font-weight:100;padding-bottom:20px}
 .page-2-wrapper .container{margin-top:45px;position:relative}
+.page-2-wrapper{max-width:1200px;margin:auto}
 .page-2-wrapper .ready-to-call{float:left;width:42%;max-width:380px}
-.call-script{color:#FFF;padding:27px 20px 20px 25px;border-radius:15px;text-align:left;margin:0 65px;width:38.5%;float:left;max-width:540px;position:relative}
+.call-script{color:#FFF;padding:27px 20px 20px 25px;border-radius:15px;text-align:left;margin-right:100px;float:left;max-width:675px;position:relative}
 .page-call-script .call-script{background:#F2FAFD}
 .page-calling .call-script{background:#0195DD;color:#D7ECFE}
 .page-calling .call-script:before{content:url(../img-bubble-corner-blue.svg);display:block;position:absolute;width:37px;height:35px;top:-30px;left:12px}
@@ -27,12 +28,12 @@ body,button{margin:0;text-align:center;color:#565656;font-family:"Open Sans","He
 .phone-error-2 span{font-weight:700}
 .branding-top{text-align:left;font-family:"Fira Sans";font-size:37px;max-width:1200px;margin:auto}
 .branding-bottom{text-align:left;font-family:"Fira Sans";font-size:26px;padding-bottom:20px}
-.calling-tips-container{border-bottom:1px solid #DBD8D8;padding:0;margin:0 auto 18px;max-width:400px;float:left}
+.calling-tips-container{border-bottom:1px solid #DBD8D8;padding:0;margin:0 auto 18px;max-width:380px;float:left}
 .calling-tip{text-align:left;background:#ECE9E0;border-top:1px solid #DBD8D8;padding:20px;font-size:16px}
 .calling-tip span{font-weight:700}
 .message,.tips-heading{text-align:center}
 .call-script-message,.message,.tips-heading{font-size:40px;font-weight:100}
-.call-script-message{text-align:left;padding-left:75px}
+.call-script-message{text-align:left}
 .page-call-script .highlight{background:#DFF0FA;color:#9EA3A6;padding:0 10px}
 .page-calling .highlight{background:#0475BB;color:#acdbff}
 .blue-highlight,.calling-status{color:#0195DD}
@@ -61,7 +62,7 @@ a{color:#27AAE1;text-decoration:none}
 .count-down-top{background:#BF3832;position:absolute;height:50%;width:100%;left:0;top:0;border-radius:5px}
 .count-down-bottom{background:#CC413C;position:absolute;height:50%;width:100%;left:0;top:50%;border-radius:5px}
 .count-down-bottom:after{content:'';display:block;position:absolute;left:-14%;bottom:14px;width:128%;height:10px;background:0 0;border-radius:100px/20px;box-shadow:0 20px 8px rgba(0,0,0,.07)}
-.call-script-container{margin-left:auto;margin-right:auto;padding:0;max-width:1030px}
+.call-script-container{margin-left:auto;margin-right:auto;padding:0}
 .page-1 .phone-container{width:50%;float:left;padding:0 30px;box-sizing:border-box}
 .page-1-wrapper{background:#FFF;max-width:700px;padding:20px 0;overflow:hidden;box-sizing:border-box}
 .page-1-wrapper a{font-weight:700}
@@ -96,7 +97,7 @@ input{font-size:12px;font-weight:200;padding:8px 0 8px 60px;text-align:left;max-
 .page-1 .message{font-size:35px}
 .branding-top{margin-left:0}
 .count-down{width:145px;height:70px}
-.call-script{float:none;width:100%;max-width:280px;margin:0 auto}
+.call-script{float:none;width:100%;max-width:280px;margin:0 auto;box-sizing:border-box}
 .page-2-wrapper .ready-to-call{float:none;width:100%;max-width:320px;margin:45px auto auto}
 .call-script-heading{font-size:29px}
 .days-left{font-size:45px}
@@ -110,7 +111,7 @@ div.every-call-counts{font-size:25px;padding-bottom:10px;margin-bottom:5px}
 .call-script-message,.message,.tips-heading{padding-left:0}}
 .call-script-message{text-alight:left}
 .tips-heading{text-align:center;padding:0}
-@media screen and (min-width :480px) and (max-width :940px){.call-script{float:none;width:50%;margin:0 auto 30}
+@media screen and (min-width :480px) and (max-width :1236px){.call-script{float:none;width:50%;margin:0 auto 30}
 .page-2-wrapper .ready-to-call{float:none;width:50%;margin:0 auto}
 .page-2-wrapper .call-now-button-container{margin:0 auto}
 .page-2-wrapper .calling-tips-container{margin:0 auto;width:50%;float:none}}
