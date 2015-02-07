@@ -75,7 +75,7 @@ a{color:#27AAE1;text-decoration:none}
 .call-script-link{padding-top:15px}
 .phone-label-warning:before{color:#C83933;content:"\f071";font-family:FontAwesome;position:absolute;top:2px;left:25px;font-size:18px}
 .phone-label-secured{position:relative}
-.page-1 .message{font-size:50px}
+.page-1 .message{font-size:50px;max-width:1200;margin:0 auto}
 .phone-label-warning{position:relative}
 .highlight{display:inline-block;border-radius:5px;padding:0 5 3px 7}
 @media screen and (max-width :480px){.footer{padding:25px 16px 16px}
@@ -112,6 +112,8 @@ div.every-call-counts{font-size:25px;padding-bottom:10px;margin-bottom:5px}
 .call-script-message{text-alight:left}
 .tips-heading{text-align:center;padding:0}
 @media screen and (min-width :480px) and (max-width :1236px){.call-script{float:none;width:50%;margin:0 auto 30}
+.page-1 .message{font-size:48px}
+.branding-top,.message,.page-2-wrapper{max-width:775px}
 .page-2-wrapper .ready-to-call{float:none;width:50%;margin:0 auto}
 .page-2-wrapper .call-now-button-container{margin:0 auto}
 .page-2-wrapper .calling-tips-container{margin:0 auto;width:50%;float:none}}

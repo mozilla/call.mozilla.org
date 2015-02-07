@@ -466,6 +466,8 @@ a {
 
 .page-1 .message {
   font-size: 50px;
+  max-width: 1200;
+  margin: 0 auto;
 }
 
 .phone-label-warning {
@@ -626,6 +628,14 @@ and (max-width : 1236px) {
     float: none;
     width: 50%;
     margin: 0 auto 30 auto;
+  }
+  .page-1 .message {
+    font-size: 48px;
+  }
+  .page-2-wrapper,
+  .message,
+  .branding-top {
+    max-width: 775px;
   }
   .page-2-wrapper .ready-to-call {
     float: none;
