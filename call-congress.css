@@ -58,7 +58,10 @@ body, button {
     margin-top: 45px;
     position: relative;
 }
-
+.page-2-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
 .page-2-wrapper .ready-to-call {
   float: left;
   width: 42%;
@@ -70,10 +73,9 @@ body, button {
   padding: 27px 20px 20px 25px;
   border-radius: 15px;
   text-align: left;
-  margin: 0 65px;
-  width: 38.5%;
+  margin-right: 100px;
   float: left;
-  max-width: 540px;
+  max-width: 675px;
   position: relative;
 }
 
@@ -172,7 +174,7 @@ body, button {
   border-bottom: 1px solid #DBD8D8;
   padding: 0;
   margin: 0 auto 18px;
-  max-width: 400px;
+  max-width: 380px;
   float: left;
 }
 .calling-tip {
@@ -197,7 +199,6 @@ body, button {
 }
 .call-script-message {
   text-align: left;
-  padding-left: 75px;
 }
 .page-call-script .highlight {
   background: #DFF0FA;
@@ -388,7 +389,6 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  max-width: 1030px;
 }
 .page-1 .phone-container {
   padding: 0;
@@ -557,6 +557,7 @@ and (max-width : 480px) {
     width: 100%;
     max-width: 280px;
     margin: 0 auto;
+    box-sizing: border-box;
   }
   .page-2-wrapper .ready-to-call {
     float: none;
@@ -616,7 +617,7 @@ and (max-width : 480px) {
 
 @media screen
 and (min-width : 480px)
-and (max-width : 940px) {
+and (max-width : 1236px) {
   .call-script {
     float: none;
     width: 50%;
