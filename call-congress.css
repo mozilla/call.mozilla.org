@@ -96,7 +96,7 @@ body, button {
   width: 37px;
   height: 35px;
   top: -30px;
-  left: 12px;
+  left: 24px;
 }
 .page-call-script .call-script:before {
   content: url('../img-bubble-corner-light.svg');
@@ -106,7 +106,7 @@ body, button {
   width: 37px;
   height: 35px;
   top: -30px;
-  left: 12px;
+  left: 24px;
 }
 .sub-ready {
   padding: 10px 35px !important;
@@ -203,11 +203,16 @@ body, button {
 .page-call-script .highlight {
   background: #DFF0FA;
   color: #9EA3A6;
-  padding: 0 10px;
+  padding: 0 5px 5px 5px;
+  line-height: 1.2;
+  margin-right: 5px;
 }
 .page-calling .highlight {
   background: #0475BB;
   color: #acdbff;
+  padding: 0 5px 5px 5px;
+  line-height: 1.2;
+  margin-right: 5px;
 }
 .calling-status,
 .blue-highlight {
@@ -469,9 +474,8 @@ a {
 
 .highlight {
    display: inline-block;
-   border-radius: 13px;
+   border-radius: 5px;
    padding: 0px 5 3px 7;
-   margin-right: 3px;
  }
 
 @media screen
@@ -769,5 +773,3 @@ and (max-width : 780px) {
       transform:rotate(360deg);
   }
 }
-
-
