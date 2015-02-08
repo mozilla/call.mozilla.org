@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
   $("#phone").mask("(000) 000 - 0000").val(phoneState);
 
   callNumber.addEventListener("input", function() {
+    $(".phone-label-warning").addClass('phone-label-secured').removeClass('phone-label-warning');
     callNumber.classList.remove("invalid");
     callNumberError.classList.remove("show");
   });
@@ -46,8 +47,9 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   callNumber2.addEventListener("input", function() {
+    $(".phone-label-warning").addClass('phone-label-secured').removeClass('phone-label-warning');
     callNumber2.classList.remove("invalid");
-    callNumberError2.classList.remove("show");
+    callNumberError2.classList.add("hidden");
   });
 
   var callButton2 = document.querySelector(".call-now-button-2");
@@ -75,13 +77,11 @@ function reqListener (e) {
   callButton2.classList.remove("waiting");
   spinner.classList.add("hidden");
   if (data.message !== "queued") {
+    $(".phone-label-secured").removeClass('phone-label-secured').addClass('phone-label-warning');
     if(boolButton1) {
-      $(".phone-label-secured").removeClass('phone-label-secured').addClass('phone-label-warning');
       callNumber.classList.add("invalid");
       callNumberError.classList.add("show");
     } else {
-      $(".phone-label-secured").removeClass('phone-label-secured').addClass('phone-label-warning');
-      $(".phone-label-top").addClass('top-red');
       callNumber2.classList.add("invalid");
       callNumberError2.classList.remove("hidden");
     }
