@@ -20,22 +20,6 @@ body, button {
   height: 50px; /* .push must be the same height as .footer */
 }
 
-.page-2-wrapper .ready-to-call button {
-  max-width: 290px;
-  height: 70px;
-}
-
-.page-2-wrapper .ready-to-call input {
-  max-width: 250px;
-  height: 50px;
-}
-
-.page-2-wrapper .ready-to-call .phone-error {
-  height: 35px;
-  font-size: 14px;
-}
-
-
 .call-script p {
   color: #565656;
   display: inline-block;
@@ -125,18 +109,24 @@ body, button {
 .phone-error.show {
   display: block;
 }
+.phone-error,
 .phone-error-2 {
   background: #FFF2F2;
   color: #BD372E;
   border-radius: 12px;
   padding: 14px;
-  font-size: 14px !important;
   max-width: 253px;
   margin: 0 auto 18px;
+  font-size: 14px;
 }
 
+.phone-error span,
 .phone-error-2 span {
   font-weight: bold;
+}
+
+.phone-error {
+  display: none;
 }
 
 .clearfix {
@@ -144,20 +134,6 @@ body, button {
   width: 100%;
 }
 
-.phone-error {
-  display: none;
-  background: #FFF2F2;
-  color: #BD372E;
-  border-radius: 12px;
-  padding: 14px;
-  font-size: 14px;
-  max-width: 253px;
-  margin: 0 auto 18px;
-}
-
-.phone-error-2 span {
-  font-weight: bold;
-}
 .branding-top {
   text-align: left;
   font-family: "Fira Sans";
@@ -232,14 +208,15 @@ body, button {
   font-size: 12px;
 }
 
-.page-1 div.every-call-count-container {
+.every-call-count-container {
   margin-top: 32px;
   width: 50%;
   float: left;
   margin-bottom: 15px;
   padding: 0px 20px 0px 35px;
 }
-.page-1 .call-now-button {
+.call-now-button-2,
+.call-now-button {
   height: 70px;
   width: 100%;
   margin: 0 auto;
@@ -247,8 +224,7 @@ body, button {
 
 .ready-to-call {
   background: #FFF;
-  padding: 18px 0 0;
-
+  padding: 18px 0;
 }
 
 .ready-to-call p {
@@ -257,7 +233,7 @@ body, button {
 }
 
 .every-call-counts,
-.ready-to-call div {
+.ready-header {
   font-size: 35px;
   font-weight: 300;
 }
@@ -402,10 +378,13 @@ a {
   margin-right: auto;
   padding: 0;
 }
-.page-1 .phone-container {
+.phone-container {
   padding: 0;
   width: 50%;
   float: left;
+}
+.phone-container-2,
+.phone-container {
   padding: 0 30px;
 }
 
@@ -444,17 +423,9 @@ a {
   font-size: 18px;
 }
 
-.top-red:before {
-  top: 24px !important;
+.call-script-link {
+  padding-top: 15px;
 }
-
-.phone-label-top:before {
-  top: 23px;
-}
-
-  .call-script-link {
-    padding-top: 15px;
-  }
 .phone-label-warning:before {
   color: #C83933;
   content: "\f071";
@@ -494,8 +465,12 @@ and (max-width : 480px) {
   .footer {
     padding: 25px 16px 16px;
   }
-  .page-1 .call-now-button {
+  .call-now-button-2,
+  .call-now-button {
     height: 50px;
+  }
+  .ready-to-call {
+    padding: 18px 0;
   }
   .tips-heading {
     margin: 30px 0 15px 0;
@@ -528,7 +503,7 @@ and (max-width : 480px) {
     font-weight: 200;
     padding: 8px 0 8px 54px;
     text-align: left;
-    max-width: 210px;
+    max-width: 200px;
   }
   .call-script-message {
     font-size: 35px;
@@ -555,9 +530,13 @@ and (max-width : 480px) {
     float: none;
     width: 100%;
   }
-  .page-1-wrapper .phone-container {
+  .phone-container {
     float: none;
     width: 100%;
+  }
+  .phone-container-2,
+  .phone-container {
+    padding: 0px 20px;
   }
   .page-1 .message {
     font-size: 35px;
@@ -598,12 +577,12 @@ and (max-width : 480px) {
   .every-call-count-container p {
     font-size: 14px;
   }
-  .page-1 div.every-call-count-container {
+  div.every-call-count-container {
     margin-top: 0;
     width: 100%;
     float: none;
   }
-  .page-1 .phone-input-container div .fa-mobile {
+  .phone-input-container div .fa-mobile {
     font-size: 20px;
     margin-right: 8px;
     vertical-align: top;
@@ -612,7 +591,9 @@ and (max-width : 480px) {
     max-width: 270px;
     padding: 0;
   }
-  .phone-error {
+  .phone-error,
+  .phone-error-2 {
+    max-width: 240px;
     font-size: 13px;
   }
   .message, .call-script-message, .tips-heading {
@@ -676,10 +657,11 @@ and (max-width : 780px) {
     margin: 0 auto;
   }
   input {
-    max-width: 225px;
+    max-width: 200px;
     font-size: 14px;
   }
-  .page-1 .call-now-button {
+  .call-now-button-2,
+  .call-now-button {
     height: 50px;
   }
   .page-1-wrapper {
@@ -711,8 +693,12 @@ and (max-width : 780px) {
   .every-call-count-container p {
     font-size: 14px;
   }
+  .phone-container-2,
+  .phone-container {
+    padding: 0px 20px;
+  }
   .page-1 div.every-call-count-container,
-  .page-1 .phone-container {
+  .phone-container {
     margin-top: 0;
     width: 100%;
     float: none;
@@ -720,16 +706,17 @@ and (max-width : 780px) {
   .enter-number {
     font-size: 14px;
   }
-  .page-1 .phone-input-container {
+  .phone-input-container {
     max-width: 270px;
     padding: 0px;
   }
-  .page-1 .phone-input-container div .fa-mobile {
+  .phone-input-container div .fa-mobile {
     font-size: 25px;
   }
-  .phone-error {
-    font-size: 12px;
-    max-width: 200px;
+  .phone-error,
+  .phone-error-2 {
+    max-width: 240px;
+    font-size: 13px;
   }
 }
 
@@ -764,10 +751,12 @@ and (max-width : 780px) {
 .page-calling .call-script-container {
   display: block;
 }
+.call-now-button-2.waiting .fa-spinner
 .call-now-button.waiting .fa-spinner {
   display: inline-block;
 }
-.call-now-button .fa-spinner {
+.fa-spinner,
+.fa-spinner {
   display: none;
 }
 .fa-spinner {
