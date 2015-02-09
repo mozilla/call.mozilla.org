@@ -751,11 +751,10 @@ and (max-width : 780px) {
 .page-calling .call-script-container {
   display: block;
 }
-.call-now-button-2.waiting .fa-spinner
+.call-now-button-2.waiting .fa-spinner,
 .call-now-button.waiting .fa-spinner {
   display: inline-block;
 }
-.fa-spinner,
 .fa-spinner {
   display: none;
 }
