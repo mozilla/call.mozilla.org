@@ -16,10 +16,6 @@ body, button {
   display: none !important;
 }
 
-.footer, .push {
-  height: 50px; /* .push must be the same height as .footer */
-}
-
 .call-script p {
   color: #565656;
   display: inline-block;
@@ -242,7 +238,7 @@ body, button {
   font-style: italic;
 }
 .footer-container {
-  padding: 0;
+  padding: 0 0 55px 0;
   margin: auto;
   max-width: 775px;
 }
@@ -258,10 +254,12 @@ body, button {
 }
 .footer {
   background: #FFFFFF;
-  padding: 43px 16px 16px 16px;
+  padding: 43px 16px 55px 16px;
   text-align: left;
   color: #BBBBBB;
+  margin-top: 50px;
 }
+
 button, input {
   margin-bottom: 18px;
   width: 100%;
@@ -463,7 +461,11 @@ a {
 @media screen
 and (max-width : 480px) {
   .footer {
-    padding: 25px 16px 16px;
+    padding: 20px 20px 45px;
+    margin-top: 55px;
+  }
+  .footer-container {
+    padding: 0;
   }
   .call-now-button-2,
   .call-now-button {
@@ -482,6 +484,7 @@ and (max-width : 480px) {
   .branding {
     float: left;
     width: 100%;
+    height: 45px;
   }
   .branding-top {
     margin-bottom: 30px;
@@ -643,6 +646,11 @@ and (max-width : 1236px) {
 @media screen
 and (min-width : 480px)
 and (max-width : 780px) {
+  .footer {
+    overflow: auto;
+    width: 100%;
+    padding-bottom: 45px;
+  }
   .call-script {
     float: none;
     width: 100%;
