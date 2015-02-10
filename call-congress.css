@@ -646,6 +646,11 @@ and (max-width : 1236px) {
 @media screen
 and (min-width : 480px)
 and (max-width : 780px) {
+  .footer {
+    overflow: auto;
+    width: 100%;
+    padding-bottom: 45px;
+  }
   .call-script {
     float: none;
     width: 100%;
