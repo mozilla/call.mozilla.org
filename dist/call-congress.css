@@ -28,7 +28,7 @@ body,button{margin:0;text-align:center;color:#565656;font-family:"Open Sans","He
 .clearfix{overflow:auto;width:100%}
 .branding-top{text-align:left;font-family:"Fira Sans";font-size:37px;max-width:1200px;margin:auto}
 .branding-bottom{text-align:left;font-family:"Fira Sans";font-size:26px;padding-bottom:20px}
-.calling-tips-container{border-bottom:1px solid #DBD8D8}
+.calling-tips-border-container{border-bottom:1px solid #DBD8D8}
 .calling-tips-container,.ready-to-call{padding:0;max-width:380px;float:left}
 .ready-to-call{margin:50px auto 0}
 .calling-tips-container{margin:0 auto}
