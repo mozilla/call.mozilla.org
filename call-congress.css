@@ -17,14 +17,12 @@ body, button {
 }
 
 .call-script p {
-  color: #565656;
   display: inline-block;
   margin-bottom: 0;
   font-size: 17px;
 }
 
 .call-script div {
-  color: #565656;
   display: inline-block;
   margin-bottom: 0;
 }
@@ -49,9 +47,13 @@ body, button {
   width: 42%;
   max-width: 380px;
 }
-
+.page-calling .call-script {
+  color: #FFFFFF;
+}
+.page-call-script .call-script {
+  color: #565656;
+}
 .call-script {
-  color: #FFF;
   padding: 27px 20px 20px 25px;
   border-radius: 15px;
   text-align: left;
@@ -488,10 +490,6 @@ a {
   background: #437BC7;
   color: #D7ECFE;
   padding: 0 10px;
-}
-
-.white-text {
-  color: #FFF !important;
 }
 
 .phone-label-secured:before {

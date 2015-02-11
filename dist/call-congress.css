@@ -2,13 +2,14 @@
 body,html{height:100%}
 body,button{margin:0;text-align:center;color:#565656;font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif}
 .hidden{display:none!important}
-.call-script p{color:#565656;display:inline-block;margin-bottom:0;font-size:17px}
-.call-script div{color:#565656;display:inline-block;margin-bottom:0}
+.call-script p{display:inline-block;margin-bottom:0;font-size:17px}
+.call-script div{display:inline-block;margin-bottom:0}
 .call-script-heading{font-size:33px;font-weight:100;padding-bottom:20px}
 .page-2-wrapper .container{position:relative}
 .page-2-wrapper{max-width:1200px;margin:auto}
 .page-2-wrapper .ready-to-call{float:left;width:42%;max-width:380px}
-.call-script{color:#FFF;padding:27px 20px 20px 25px;border-radius:15px;text-align:left;margin:50px 100px 0 0;float:left;max-width:675px;position:relative}
+.page-call-script .call-script{color:#565656}
+.call-script{padding:27px 20px 20px 25px;border-radius:15px;text-align:left;margin:50px 100px 0 0;float:left;max-width:675px;position:relative}
 .report-back-button{max-width:280px}
 .report-back-button-container{width:100%;margin:0 auto;padding-top:40px}
 .all-done-message{padding-bottom:20px}
@@ -85,7 +86,6 @@ a{color:#27AAE1;text-decoration:none}
 .spinner-call{font-size:24px;margin-right:10px}
 .page-calling .spinner-call{display:inline-block}
 .blue-text-bg{background:#437BC7;color:#D7ECFE;padding:0 10px}
-.white-text{color:#FFF!important}
 .phone-label-secured:before{color:#B5B1A6;content:"\f023";font-family:FontAwesome;position:absolute;top:2px;left:13px;font-size:18px}
 .call-script-link{padding-top:15px}
 .phone-label-warning:before{color:#C83933;content:"\f071";font-family:FontAwesome;position:absolute;top:2px;left:25px;font-size:18px}
