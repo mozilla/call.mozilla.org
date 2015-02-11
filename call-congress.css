@@ -30,14 +30,15 @@ body, button {
 }
 
 .call-script-heading {
-    font-size: 33px;
-    font-weight: 100;
-    padding-bottom: 20px;
+  font-size: 33px;
+  font-weight: 100;
+  padding-bottom: 20px;
 }
-
+.report-back-input label {
+  display: block;
+}
 .page-2-wrapper .container {
-    margin-top: 45px;
-    position: relative;
+  position: relative;
 }
 .page-2-wrapper {
   max-width: 1200px;
@@ -54,13 +55,22 @@ body, button {
   padding: 27px 20px 20px 25px;
   border-radius: 15px;
   text-align: left;
-  margin-right: 100px;
+  margin: 50px 100px 0 0;
   float: left;
   max-width: 675px;
   position: relative;
 }
-
-
+.report-back-button {
+  max-width: 280px;
+}
+.report-back-button-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.all-done-message {
+  padding-bottom: 20px;
+}
 .page-call-script .call-script {
   background: #F2FAFD;
 }
@@ -93,7 +103,7 @@ body, button {
   padding: 10px 35px !important;
 }
 .content-container {
-  padding: 18px 18px 0px 18px;
+  padding: 18px 18px 0 18px;
 }
 .call-number.invalid {
   border: 3px solid #BD372E;
@@ -124,7 +134,6 @@ body, button {
 .phone-error {
   display: none;
 }
-
 .clearfix {
   overflow: auto;
   width: 100%;
@@ -145,10 +154,18 @@ body, button {
 }
 .calling-tips-container {
   border-bottom: 1px solid #DBD8D8;
+}
+.ready-to-call,
+.calling-tips-container {
   padding: 0;
-  margin: 0 auto 18px;
   max-width: 380px;
   float: left;
+}
+.ready-to-call {
+  margin: 50px auto 0;
+}
+.calling-tips-container {
+  margin: 0 auto;
 }
 .calling-tip {
   text-align: left;
@@ -161,19 +178,29 @@ body, button {
   font-weight: bold;
 }
 .message,
+.report-back-message,
 .tips-heading {
   text-align: center;
 }
 .message,
+.report-back-message,
+.thank-you-message,
 .call-script-message {
   font-size: 45px;
 }
 .message,
 .call-script-message,
+.report-back-message,
+.thank-you-message,
 .tips-heading {
   font-weight: 100;
 }
-
+.comments-input {
+  margin: auto;
+  display: block;
+  height: 190px;
+  width: 100%;
+}
 .tips-heading {
   font-size: 30px;
   padding-bottom: 20px;
@@ -209,10 +236,9 @@ body, button {
   width: 50%;
   float: left;
   margin-bottom: 15px;
-  padding: 0px 20px 0px 35px;
+  padding: 0 20px 0 35px;
 }
-.call-now-button-2,
-.call-now-button {
+.blue-button {
   height: 70px;
   width: 100%;
   margin: 0 auto;
@@ -228,14 +254,20 @@ body, button {
   font-size: 16px;
 }
 
-.every-call-counts,
-.ready-header {
+.share-sub-message,
+.message-header {
   font-size: 35px;
   font-weight: 300;
 }
 
-.every-call-counts span {
+.share-sub-message span,
+.message-header span {
   font-style: italic;
+}
+.share-sub-message {
+  max-width: 520px;
+  margin: 30px auto;
+  width: 100%;
 }
 .footer-container {
   padding: 0 0 55px 0;
@@ -259,15 +291,17 @@ body, button {
   color: #BBBBBB;
   margin-top: 50px;
 }
-
-button, input {
+button,
+.call-number,
+.call-number-2 {
   margin-bottom: 18px;
   width: 100%;
   text-align: center;
   border-radius: 5px;
 }
 
-input {
+.call-number,
+.call-number-2 {
   font-size: 16px;
   font-weight: 200;
   padding: 10px 0 10px 50px;
@@ -276,7 +310,52 @@ input {
   background: #FAFAFA;
   text-align: left;
 }
-
+.report-back-container {
+  max-width: 1200px;
+  margin: auto;
+  overflow: auto;
+}
+.report-back-input {
+  margin-right: 34px;
+  max-width: 200px;
+  float: left;
+  max-width: 265px;
+  padding: 34px;
+}
+.comments-submit-container,
+.report-back-input {
+  background: #FFFFFF;
+}
+.report-back-input span {
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+.report-back-input span,
+.report-back-input label {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+}
+.report-back-input input {
+  margin-right: 10px;
+}
+.report-back-input,
+.comments-input,
+.submit-report-button {
+  margin-top: 34px;
+}
+.comments-submit-container {
+  max-width: 444px;
+  margin: 34px auto 0;
+  padding: 0 34px 34px;
+}
+.comments-submit-container,
+.report-back-input-container {
+  float: left;
+  overflow: auto;
+  max-width: 600px;
+  width: 100%;
+}
 button {
   background: blue;
   color: #FFFFFF;
@@ -285,7 +364,7 @@ button {
   background: #318DD0;
   background: linear-gradient(to bottom, #43A5E2, #1E6EB7);
   cursor: pointer;
-  box-shadow: 0px 2px 2px #999999;
+  box-shadow: 0 2px 2px #999999;
   font-size: 22px;
   font-weight: lighter;
 }
@@ -304,7 +383,6 @@ button {
   padding: 0;
   margin-bottom: 5px;
 }
-
 a {
   color: #27AAE1;
   text-decoration: none;
@@ -391,6 +469,7 @@ a {
   max-width: 700px;
   padding: 20px 0;
   overflow: hidden;
+  margin: 0 auto;
 }
 .page-1-wrapper a {
   font-weight: bold;
@@ -399,6 +478,10 @@ a {
 .spinner-call {
   font-size: 24px;
   margin-right: 10px;
+}
+
+.page-calling .spinner-call {
+  display: inline-block;
 }
 
 .blue-text-bg {
@@ -451,7 +534,7 @@ a {
 .highlight {
    display: inline-block;
    border-radius: 5px;
-   padding: 0px 5 3px 7;
+   padding: 0 5 3px 7;
 }
 
 .calling-status p {
@@ -467,8 +550,23 @@ and (max-width : 480px) {
   .footer-container {
     padding: 0;
   }
-  .call-now-button-2,
-  .call-now-button {
+  .report-back-input {
+    float: none;
+    width: 100%;
+    max-width: 600px;
+    margin-right: 0;
+  }
+  .comments-submit-container,
+  .report-back-input-container {
+    float: none;
+  }
+  .report-back-input-container {
+    margin-right: 0;
+  }
+  .report-back-container {
+    max-width: 775px;
+  }
+  .blue-button {
     height: 50px;
   }
   .ready-to-call {
@@ -501,7 +599,11 @@ and (max-width : 480px) {
     width: 100%;
     float: none;
   }
-  input {
+  .comments-input {
+    height: 100px;
+  }
+  .call-number,
+  .call-number-2 {
     font-size: 12px;
     font-weight: 200;
     padding: 8px 0 8px 54px;
@@ -539,7 +641,7 @@ and (max-width : 480px) {
   }
   .phone-container-2,
   .phone-container {
-    padding: 0px 20px;
+    padding: 0 20px;
   }
   .page-1 .message {
     font-size: 35px;
@@ -548,18 +650,18 @@ and (max-width : 480px) {
     width: 145px;
     height: 70px;
   }
-  .page-2-wrapper .calling-tips-container,
+  .calling-tips-container,
   .call-script {
     float: none;
     width: 100%;
     max-width: 280px;
-    margin: 0 auto;
+    margin: 50px auto 0;
   }
   .page-2-wrapper .ready-to-call {
     float: none;
     width: 100%;
     max-width: 280px;
-    margin: 45px auto auto auto;
+    margin: 45px auto 0 auto;
   }
   .call-script-heading {
     font-size: 29px;
@@ -604,7 +706,6 @@ and (max-width : 480px) {
   }
 }
 
-
 .call-script-message {
   text-alight: left;
 }
@@ -620,23 +721,47 @@ and (max-width : 1236px) {
     float: left;
     width: 100%;
     max-width: 335px;
-    margin: 0px 48px 30px 0px;
+    margin: 50px 48px 0 0;
+  }
+  .comments-input {
+    height: 100px;
+  }
+  .report-back-container {
+    max-width: 775px;
+  }
+  .comments-submit-container,
+  .report-back-input-container {
+    float: none;
+  }
+  .report-back-input-container {
+    margin: auto;
+  }
+  .report-back-input.right-input {
+    margin-right: 0;
+  }
+  .report-back-input {
+    max-width: 283px;
   }
   .page-2-wrapper .ready-to-call,
   .page-2-wrapper .calling-tips-container {
     float: left;
     width: 100%;
     max-width: 360px;
-    margin: 0 auto;
+  }
+  .page-2-wrapper .calling-tips-container {
+    margin: 50px auto 0;
   }
   .page-1 .message {
     font-size: 45px;
+  }
+  .message,
+  .branding-top {
+    margin-bottom: 30px;
   }
   .page-2-wrapper,
   .message,
   .branding-top {
     max-width: 775px;
-    margin-bottom: 30px;
   }
   .page-2-wrapper .call-now-button-container {
     margin: 0 auto;
@@ -651,25 +776,33 @@ and (max-width : 780px) {
     width: 100%;
     padding-bottom: 45px;
   }
-  .call-script {
-    float: none;
-    width: 100%;
-    max-width: 380px;
-    margin: 0 auto 30 auto;
-  }
+  .call-script,
   .page-2-wrapper .ready-to-call,
   .page-2-wrapper .calling-tips-container {
     float: none;
     width: 100%;
     max-width: 380px;
-    margin: 0 auto;
+    margin: 50px auto 0;
   }
-  input {
+  .report-back-input {
+    float: none;
+    width: 100%;
+    max-width: 600px;
+    margin-right: 0;
+  }
+  .comments-submit-container,
+  .report-back-input-container {
+    float: none;
+  }
+  .report-back-input-container {
+    margin: auto;
+  }
+  .call-number,
+  .call-number-2 {
     max-width: 200px;
     font-size: 14px;
   }
-  .call-now-button-2,
-  .call-now-button {
+  .blue-button {
     height: 50px;
   }
   .page-1-wrapper {
@@ -703,7 +836,7 @@ and (max-width : 780px) {
   }
   .phone-container-2,
   .phone-container {
-    padding: 0px 20px;
+    padding: 0 20px;
   }
   .page-1 div.every-call-count-container,
   .phone-container {
@@ -716,7 +849,7 @@ and (max-width : 780px) {
   }
   .phone-input-container {
     max-width: 270px;
-    padding: 0px;
+    padding: 0;
   }
   .phone-input-container div .fa-mobile {
     font-size: 25px;
@@ -727,12 +860,6 @@ and (max-width : 780px) {
     font-size: 13px;
   }
 }
-
-.center-block {
-  display: block;
-  margin: 0 auto;
-}
-
 .main-container {
   background: #EDEAE3;
   background: linear-gradient(to bottom, #D7D3C8, #F6F4EC);
@@ -742,8 +869,12 @@ and (max-width : 780px) {
 .calling-status,
 .calling-tips,
 .message,
+.page-1-wrapper,
 .calling-tips-container,
 .call-script-link,
+.report-back-button-container,
+.report-back-container,
+.share-page-container,
 .page-calling .content,
 .page-calling .ready-to-call {
   display: none;
@@ -752,14 +883,19 @@ and (max-width : 780px) {
 .page-1 .call-script-link,
 .page-1 .every-call-count-container,
 .page-1 .count-down,
+.page-1 .page-1-wrapper,
 .page-call-script .call-script-container,
+.page-report-back .report-back-container,
+.page-share .share-page-container,
 .page-calling .calling-status,
 .page-calling .calling-tips,
+.page-calling .report-back-button-container,
 .page-calling .calling-tips-container,
 .page-calling .call-script-container {
   display: block;
 }
 .call-now-button-2.waiting .fa-spinner,
+.submit-report-button.waiting .fa-spinner,
 .call-now-button.waiting .fa-spinner {
   display: inline-block;
 }

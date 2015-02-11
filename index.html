@@ -6,6 +6,7 @@
   <link href="dist/call-congress.css" rel="stylesheet" type="text/css">
   <script src="jquery.js"></script>
   <script src="mask.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.1.2/firebase.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -40,50 +41,59 @@
           </div>
 
           <div class="container">
-            <div class="call-script">
-              <div class="call-script-heading">
-                Hello, my name is
-                <span class="highlight hl1"> your name </span>and I am a voter from
-                <span class="highlight hl2"> city, state.</span>
+            <div class="clearfix">
+              <div class="call-script">
+                <div class="call-script-heading">
+                  Hello, my name is
+                  <span class="highlight hl1"> your name </span>and I am a voter from
+                  <span class="highlight hl2"> city, state.</span>
+                </div>
+                <p class="script-text">
+                  I am calling because the Federal Communications Commissioners will take a vote February 26 on net neutrality rules. I want the FCC and Congress to do everything possible and put strong protections in place. <b>Thank you.</b>
+                </p>
               </div>
-              <p class="script-text">
-                I am calling because the Federal Communications Commissioners will take a vote February 26 on net neutrality rules. I want the FCC and Congress to do everything possible and put strong protections in place. <b>Thank you.</b>
-              </p>
-            </div>
 
-            <div class="ready-to-call">
-              <div class="ready-header">Ready to call?</div>
-              <p class="sub-ready">Enter your phone number and we'll connect you with your official.</p>
-              <div class="phone-container-holder">
-                <div class="phone-container-2">
-                  <div class="phone-input-container">
-                    <label class="phone-label-secured phone-label-top">
-                      <input class="call-number-2" id="phone" type="tel" placeholder="(555) 555 - 5555">
-                    </label>
-                  </div>
-                  <div class="phone-error-2 hidden">
-                    <span>Uh oh! Something's not right.</span> Try checking the number again.
-                  </div>
-                  <div class="call-now-button-container">
-                    <button class="call-now-button-2"><i class="fa fa-spinner"></i> Get started <i class="fa fa-angle-right"></i>
-                    </button>
+              <div class="ready-to-call">
+                <div class="message-header">Ready to call?</div>
+                <p class="sub-ready">Enter your phone number and we'll connect you with your official.</p>
+                <div class="phone-container-holder">
+                  <div class="phone-container-2">
+                    <div class="phone-input-container">
+                      <label class="phone-label-secured phone-label-top">
+                        <input class="call-number-2" id="phone" type="tel" placeholder="(555) 555 - 5555">
+                      </label>
+                    </div>
+                    <div class="phone-error-2 hidden">
+                      <span>Uh oh! Something's not right.</span> Try checking the number again.
+                    </div>
+                    <div class="call-now-button-container">
+                      <button class="call-now-button-2 blue-button"><i class="fa fa-spinner"></i> Get started <i class="fa fa-angle-right"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="calling-tips-container">
-              <div class="tips-heading">Tips</div>
-              <div class="calling-tip">If you get a voicemail,
-                <span>leave a message.</span>
-              </div>
-              <div class="calling-tip">When a call finishes, don't hang up.
-                <span>Press the * (star) key</span> to call your next official.
-              </div>
-              <div style="display: none;" class="calling-tip">Please
-                <span class="blue-highlight">report how your call went</span>
+              <div class="calling-tips-container">
+                <div class="tips-heading">Tips</div>
+                <div class="calling-tip">If you get a voicemail,
+                  <span>leave a message.</span>
+                </div>
+                <div class="calling-tip">When a call finishes, don't hang up.
+                  <span>Press the * (star) key</span> to call your next official.
+                </div>
+                <div class="calling-tip">Please
+                  <a href="#" class="report-back-link">report how your call went</a>
+                </div>
               </div>
             </div>
+              <div class="report-back-button-container">
+                <div class="all-done-message">
+                  <div class="message-header">All done?</div>
+                  Tell us how it went.
+                </div>
+                <button class="blue-button report-back-button">Report back <i class="fa fa-angle-right"></i></button>
+              </div>
             <div style="clear:both"></div>
           </div>
         </div>
@@ -99,11 +109,11 @@
           <span class="days-left"></span> days
         </div>
       </div>
-      <div class="center-block page-1-wrapper">
+      <div class="page-1-wrapper">
 
 
         <div class="every-call-count-container">
-          <div class="every-call-counts">
+          <div class="message-header">
             <span>Every</span> call counts.</div>
           <p>
             Even if it's the first time you've ever called an elected official, we've made it easy. We'll call you right away and connect you with a representative.
@@ -121,7 +131,7 @@
             <span>Uh oh! Something's not right.</span> Try checking the number again.
           </div>
           <div class="call-now-button-container">
-            <button class="call-now-button"><i class="fa fa-spinner"></i> Get started <i class="fa fa-angle-right"></i>
+            <button class="call-now-button blue-button"><i class="fa fa-spinner"></i> Get started <i class="fa fa-angle-right"></i>
             </button>
             <div class="call-script-link"><a href="#">Preview the call script.</a>
             </div>
@@ -130,6 +140,84 @@
       </div>
       <!-- first page ends here -->
 
+      <!-- report back page starts here -->
+      <div class="report-back-container">
+        <div class="report-back-message">What happened?</div>
+        <div class="report-back-input-container">
+          <div class="report-back-input">
+            <span>Senator #1:</span>
+            <label>
+              <input name="senator-1" type="radio" value="left voicemail">
+              left voicemail
+            </label>
+            <label>
+              <input name="senator-1" type="radio" value="talked to staff">
+              talked to staff
+            </label>
+            <label>
+              <input name="senator-1" type="radio" value="unsuccessful">
+              unsuccessful
+            </label>
+          </div>
+          <div class="report-back-input right-input">
+            <span>Senator #2:</span>
+            <label>
+              <input name="senator-2" type="radio" value="left voicemail">
+              left voicemail
+            </label>
+            <label>
+              <input name="senator-2" type="radio" value="talked to staff">
+              talked to staff
+            </label>
+            <label>
+              <input name="senator-2" type="radio" value="unsuccessful">
+              unsuccessful
+            </label>
+          </div>
+          <div class="report-back-input">
+            <span>Your Congress Rep:</span>
+            <label>
+              <input name="congress-rep" type="radio" value="left voicemail">
+              left voicemail
+            </label>
+            <label>
+              <input name="congress-rep" type="radio" value="talked to staff">
+              talked to staff
+            </label>
+            <label>
+              <input name="congress-rep" type="radio" value="unsuccessful">
+              unsuccessful
+            </label>
+          </div>
+          <div class="report-back-input right-input">
+            <span>FCC Member:</span>
+            <label>
+              <input name="fcc-member" type="radio" value="left voicemail">
+              left voicemail
+            </label>
+            <label>
+              <input name="fcc-member" type="radio" value="talked to staff">
+              talked to staff
+            </label>
+            <label>
+              <input name="fcc-member" type="radio" value="unsuccessful">
+              unsuccessful
+            </label>
+          </div>
+        </div>
+        <div class="comments-submit-container">
+          <textarea class="comments-input" rows="10" cols="50" placeholder="Comments"></textarea>
+          <button class="blue-button submit-report-button"><i class="fa fa-spinner"></i> Submit report <i class="fa fa-angle-right"></i></button>
+        </div>
+      </div>
+      <!-- report back page end here -->
+
+      <!-- share page starts here -->
+      <div class="share-page-container">
+        <div class="thank-you-message">Thank you for your time!</div>
+        <div class="share-sub-message">There are only days left until the FCC votes, and <span class="blue-highlight">every call counts</span>.</div>
+      </div>
+      <!-- share page ends here -->
 
     </div>
     <div class="footer">
