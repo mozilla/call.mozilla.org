@@ -37,7 +37,7 @@ body,button{margin:0;text-align:center;color:#565656;font-family:"Open Sans","He
 .message,.report-back-message,.tips-heading{text-align:center}
 .call-script-message,.message,.report-back-message,.thank-you-message{font-size:45px}
 .call-script-message,.message,.report-back-message,.thank-you-message,.tips-heading{font-weight:100}
-.comments-input{margin:auto;display:block;height:190px;width:100%}
+.comments-input{margin:auto;display:block;height:190px;width:100%;padding:15px;font-size:16px}
 .tips-heading{font-size:30px;padding-bottom:20px}
 .call-script-message{text-align:left}
 .page-call-script .highlight{background:#DFF0FA;color:#9EA3A6;padding:0 5px 5px;line-height:1.2;margin-right:5px}
