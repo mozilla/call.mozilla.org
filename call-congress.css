@@ -5,11 +5,13 @@
 html, body {
   height: 100%;
 }
+body, button, textarea {
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 body, button {
   margin: 0;
   text-align: center;
   color: #565656;
-  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .hidden {
@@ -324,7 +326,7 @@ button,
   max-width: 200px;
   float: left;
   max-width: 265px;
-  padding: 34px;
+  padding: 34px 0 34px 34px;
 }
 .comments-submit-container,
 .report-back-input {
