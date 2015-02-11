@@ -154,8 +154,6 @@ document.addEventListener("DOMContentLoaded", function() {
     page2Wrapper.classList.remove("hidden");
     hl1.classList.add("blue-text-bg");
     hl2.classList.add("blue-text-bg");
-    callScriptHeader.classList.add("white-text");
-    scriptText.classList.add("white-text");
     spinner.classList.remove("hidden");
     contentContainer.removeChild(page1Div);
     contentContainer.classList.remove("page-1");
