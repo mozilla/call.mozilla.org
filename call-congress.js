@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var contentContainer = document.querySelector(".content-container");
   var finalDay = new Date(2015, 1, 26);
   var nowDay = new Date();
-  var daysLeft = Math.floor((finalDay - nowDay)/(1000*60*60*24));
+  var daysLeft = Math.ceil((finalDay - nowDay)/(1000*60*60*24));
   var readyScript = document.querySelector(".ready-to-call");
   var callScript = document.querySelector(".call-script");
   var hl1 = document.querySelector(".hl1");
