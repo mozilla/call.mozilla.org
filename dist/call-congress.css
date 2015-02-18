@@ -39,6 +39,7 @@ body,button{margin:0;text-align:center;color:#565656}
 .call-script-message,.message,.report-back-message,.thank-you-message{font-size:45px}
 .call-script-message,.message,.report-back-message,.thank-you-message,.tips-heading{font-weight:100}
 .comments-input{margin:auto;display:block;height:190px;width:100%;padding:15px;font-size:16px}
+.report-back-input.right-input{margin-right:0}
 .tips-heading{font-size:30px;padding-bottom:20px}
 .call-script-message{text-align:left}
 .page-call-script .highlight{background:#DFF0FA;color:#9EA3A6;padding:0 5px 5px;line-height:1.2;margin-right:5px}
@@ -66,7 +67,7 @@ body,button{margin:0;text-align:center;color:#565656}
 .report-back-input input{margin-right:10px}
 .comments-input,.report-back-input,.submit-report-button{margin-top:34px}
 .comments-submit-container{margin:34px auto 0;padding:0 34px 34px}
-.comments-submit-container,.report-back-input-container{float:left;overflow:auto;max-width:600px;width:100%}
+.comments-submit-container,.report-back-input-container{margin-left:auto;margin-right:auto;overflow:auto;width:100%;max-width:866px}
 button{color:#FFF;border:none;padding:10px 0;background:#318DD0;background:linear-gradient(to bottom,#43A5E2,#1E6EB7);cursor:pointer;box-shadow:0 2px 2px #999;font-size:22px;font-weight:lighter}
 .call-now-button-container{max-width:290px;margin:auto;padding:0}
 .phone-input-container{padding:0 30px;max-width:290px;margin:auto;position:relative}
@@ -139,10 +140,7 @@ div.every-call-count-container{margin-top:0;width:100%;float:none}
 @media screen and (min-width :480px) and (max-width :1236px){.call-script{float:left;width:100%;max-width:335px;margin:50px 48px 0 0}
 .comments-input{height:100px}
 .report-back-container{max-width:775px}
-.comments-submit-container,.report-back-input-container{float:none}
-.report-back-input-container{margin:auto}
-.report-back-input.right-input{margin-right:0}
-.report-back-input{max-width:283px}
+.report-back-input{width:100%;float:none;max-width:775px}
 .page-2-wrapper .calling-tips-container,.page-2-wrapper .ready-to-call{float:left;width:100%;max-width:360px}
 .page-2-wrapper .calling-tips-container{margin:50px auto 0}
 .page-1 .message{font-size:45px}
@@ -153,7 +151,7 @@ div.every-call-count-container{margin-top:0;width:100%;float:none}
 .call-script,.page-2-wrapper .calling-tips-container,.page-2-wrapper .ready-to-call{float:none;width:100%;max-width:380px;margin:50px auto 0}
 .report-back-input{float:none;width:100%;max-width:600px;margin-right:0}
 .comments-submit-container,.report-back-input-container{float:none}
-.report-back-input-container{margin:auto}
+.report-back-input-container{margin:auto;max-width:600px}
 .call-number,.call-number-2{max-width:200px;font-size:14px}
 .blue-button{height:50px}
 .page-1-wrapper{max-width:280px}
