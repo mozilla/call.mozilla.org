@@ -396,68 +396,11 @@ a {
   color: #27AAE1;
   text-decoration: none;
 }
-.count-down {
-  color: white;
-  position: relative;
-  width: 190px;
-  height: 90px;
-  padding: 0;
-  margin: 35px auto 45px;
-  display: none;
-}
-.count-down-text {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  font-size: 29px;
-  font-weight: 300;
-  padding: 0;
-  text-shadow: rgba(0, 0, 0, 0.4) 0 1px;
-}
 .phone-input-container div .fa-mobile {
   font-size: 34px;
   margin-right: 12px;
   vertical-align: middle;
 }
-.days-left {
-  font-size: 70px;
-  font-weight: bold;
-  letter-spacing: -2px;
-}
-.count-down-top {
-  background: #BF3832;
-  position: absolute;
-  height: 50%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 5px;
-}
-.count-down-bottom {
-  background: #CC413C;
-  position: absolute;
-  height: 50%;
-  width: 100%;
-  left: 0;
-  top: 50%;
-  border-radius: 5px;
-}
-
-/* Floating Shadow Pseudoelement */
-.count-down-bottom:after {
-  content:'';
-  display: block;
-  position: absolute;
-  left: -14%;
-  bottom: 14px;
-  width: 128%;
-  height: 10px;
-  background: transparent;
-  border-radius: 100px/20px;
-  box-shadow: 0 20px 8px rgba(0,0,0,0.07);
-}
-
 .call-script-container {
   margin-left: auto;
   margin-right: auto;
@@ -529,7 +472,7 @@ a {
 .page-1 .message {
   font-size: 50px;
   max-width: 1200;
-  margin: 0 auto;
+  margin: 0 auto 35px;
 }
 
 .phone-label-warning {
@@ -651,10 +594,6 @@ and (max-width : 480px) {
   .page-1 .message {
     font-size: 35px;
   }
-  .count-down {
-    width: 145px;
-    height: 70px;
-  }
   .calling-tips-container,
   .call-script {
     float: none;
@@ -670,14 +609,6 @@ and (max-width : 480px) {
   }
   .call-script-heading {
     font-size: 29px;
-  }
-  .days-left {
-    font-size: 45px;
-  }
-  .count-down-text {
-    font-size: 20px;
-    font-weight: lighter;
-    padding: 5px 0;
   }
   div.every-call-counts {
     font-size: 25px;
@@ -812,18 +743,6 @@ and (max-width : 780px) {
   .branding-top {
     margin-left: 0;
   }
-  .count-down {
-    width: 145px;
-    height: 70px;
-  }
-  .days-left {
-    font-size: 45px;
-  }
-  .count-down-text {
-    font-size: 20px;
-    font-weight: lighter;
-    padding: 5px 0;
-  }
   div.every-call-counts {
     font-size: 25px;
     padding-bottom: 10px;
@@ -880,7 +799,6 @@ and (max-width : 780px) {
 .page-1 .message,
 .page-1 .call-script-link,
 .page-1 .every-call-count-container,
-.page-1 .count-down,
 .page-1 .page-1-wrapper,
 .page-call-script .call-script-container,
 .page-report-back .report-back-container,
