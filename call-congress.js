@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var daysLeftElement = document.querySelector(".days-left");
   var contentContainer = document.querySelector(".content-container");
-  var finalDay = new Date(2015, 1, 26);
-  var nowDay = new Date();
-  var daysLeft = Math.ceil((finalDay - nowDay)/(1000*60*60*24));
   var readyScript = document.querySelector(".ready-to-call");
   var callScript = document.querySelector(".call-script");
   var hl1 = document.querySelector(".hl1");
@@ -14,11 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
   var scriptText = document.querySelector(".script-text");
   var boolButton1 = false;
   var boolButton2 = false;
-
-  if (daysLeft === 0) {
-    // do something on last day?
-  }
-  daysLeftElement.textContent = daysLeft;
 
   var callNumber = document.querySelector(".call-number");
   var callNumberError = document.querySelector(".phone-error");
@@ -73,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
       submitReportButton.classList.remove("waiting");
     }
     $.ajax({
-      url: "https://docs.google.com/forms/d/1bB4Tals9lofhSsn4yX03zJ0MbPZQnJrb8JGDSnRs-tg/formResponse",
+      url: "https://docs.google.com/forms/d/1qOhHnqtq3IdjZ6Cj2Zr_AoNBw0mS69Zxg2g-09h0L7M/formResponse",
       data: {
         // Senator 1
         "entry.697672033": senator1Value,
@@ -127,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   function makeCall(value) {
-    var url = "https://callcongress.mofoprod.net/create?campaignId=jan14th&userPhone=";
+    var url = "https://callcongress.mofoprod.net/create?campaignId=mass-surveillance&userPhone=";
     var oReq = new XMLHttpRequest();
     oReq.onload = reqListener;
     oReq.open("post", url + value, true);

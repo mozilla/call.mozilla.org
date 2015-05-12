@@ -73,13 +73,7 @@ button{color:#FFF;border:none;padding:10px 0;background:#318DD0;background:linea
 .phone-input-container{padding:0 30px;max-width:290px;margin:auto;position:relative}
 .phone-input-container div{padding:0;margin-bottom:5px}
 a{color:#27AAE1;text-decoration:none}
-.count-down{color:#fff;position:relative;width:190px;height:90px;padding:0;margin:35px auto 45px;display:none}
-.count-down-text{position:absolute;left:0;bottom:0;width:100%;font-size:29px;font-weight:300;padding:0;text-shadow:rgba(0,0,0,.4) 0 1px}
 .phone-input-container div .fa-mobile{font-size:34px;margin-right:12px;vertical-align:middle}
-.days-left{font-size:70px;font-weight:700;letter-spacing:-2px}
-.count-down-top{background:#BF3832;position:absolute;height:50%;width:100%;left:0;top:0;border-radius:5px}
-.count-down-bottom{background:#CC413C;position:absolute;height:50%;width:100%;left:0;top:50%;border-radius:5px}
-.count-down-bottom:after{content:'';display:block;position:absolute;left:-14%;bottom:14px;width:128%;height:10px;background:0 0;border-radius:100px/20px;box-shadow:0 20px 8px rgba(0,0,0,.07)}
 .call-script-container{margin-left:auto;margin-right:auto;padding:0}
 .phone-container{width:50%;float:left}
 .phone-container,.phone-container-2{padding:0 30px}
@@ -92,7 +86,7 @@ a{color:#27AAE1;text-decoration:none}
 .call-script-link{padding-top:15px}
 .phone-label-warning:before{color:#C83933;content:"\f071";font-family:FontAwesome;position:absolute;top:2px;left:25px;font-size:18px}
 .phone-label-secured{position:relative}
-.page-1 .message{font-size:50px;max-width:1200;margin:0 auto}
+.page-1 .message{font-size:50px;max-width:1200;margin:0 auto 35px}
 .phone-label-warning{position:relative}
 .highlight{display:inline-block;border-radius:5px;padding:0 5 3px 7}
 .calling-status p{padding-bottom:25px}
@@ -122,12 +116,9 @@ a{color:#27AAE1;text-decoration:none}
 .every-call-count-container,.phone-container{float:none;width:100%}
 .phone-container,.phone-container-2{padding:0 20px}
 .page-1 .message{font-size:35px}
-.count-down{width:145px;height:70px}
 .call-script,.calling-tips-container{float:none;width:100%;max-width:280px;margin:50px auto 0}
 .page-2-wrapper .ready-to-call{float:none;width:100%;max-width:280px;margin:45px auto 0}
 .call-script-heading{font-size:29px}
-.days-left{font-size:45px}
-.count-down-text{font-size:20px;font-weight:lighter;padding:5px 0}
 div.every-call-counts{font-size:25px;padding-bottom:10px;margin-bottom:5px}
 .every-call-count-container p{font-size:14px}
 div.every-call-count-container{margin-top:0;width:100%;float:none}
@@ -157,9 +148,6 @@ div.every-call-count-container{margin-top:0;width:100%;float:none}
 .page-1-wrapper{max-width:280px}
 .page-1 .message{font-size:35px}
 .branding-top{margin-left:0}
-.count-down{width:145px;height:70px}
-.days-left{font-size:45px}
-.count-down-text{font-size:20px;font-weight:lighter;padding:5px 0}
 div.every-call-counts{font-size:25px;padding-bottom:10px;margin-bottom:5px}
 .every-call-count-container p{font-size:14px}
 .phone-container,.phone-container-2{padding:0 20px}
@@ -170,7 +158,7 @@ div.every-call-counts{font-size:25px;padding-bottom:10px;margin-bottom:5px}
 .phone-error,.phone-error-2{max-width:240px;font-size:13px}}
 .main-container{background:#EDEAE3;background:linear-gradient(to bottom,#D7D3C8,#F6F4EC)}
 .call-script-container,.call-script-link,.calling-status,.calling-tips,.calling-tips-container,.every-call-count-container,.message,.page-1-wrapper,.page-calling .content,.page-calling .ready-to-call,.report-back-button-container,.report-back-container,.share-page-container{display:none}
-.page-1 .call-script-link,.page-1 .count-down,.page-1 .every-call-count-container,.page-1 .message,.page-1 .page-1-wrapper,.page-call-script .call-script-container,.page-calling .call-script-container,.page-calling .calling-status,.page-calling .calling-tips,.page-calling .calling-tips-container,.page-calling .report-back-button-container,.page-report-back .report-back-container,.page-share .share-page-container{display:block}
+.page-1 .call-script-link,.page-1 .every-call-count-container,.page-1 .message,.page-1 .page-1-wrapper,.page-call-script .call-script-container,.page-calling .call-script-container,.page-calling .calling-status,.page-calling .calling-tips,.page-calling .calling-tips-container,.page-calling .report-back-button-container,.page-report-back .report-back-container,.page-share .share-page-container{display:block}
 .call-now-button-2.waiting .fa-spinner,.call-now-button.waiting .fa-spinner,.submit-report-button.waiting .fa-spinner{display:inline-block}
 .fa-spinner{display:none;-webkit-animation-name:spin;-webkit-animation-duration:2000ms;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;-moz-animation-name:spin;-moz-animation-duration:2000ms;-moz-animation-iteration-count:infinite;-moz-animation-timing-function:linear;-ms-animation-name:spin;-ms-animation-duration:2000ms;-ms-animation-iteration-count:infinite;-ms-animation-timing-function:linear;animation-name:spin;animation-duration:2000ms;animation-iteration-count:infinite;animation-timing-function:linear}
 @-ms-keyframes spin{from{-ms-transform:rotate(0deg)}
